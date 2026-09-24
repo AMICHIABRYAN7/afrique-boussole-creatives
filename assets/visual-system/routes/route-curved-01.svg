@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 800" width="1500" height="800">
+  <!-- Trajectoire S-Curve Fluidifiée -->
+  <path d="M 100,600 
+           C 400,600 450,200 750,200 
+           C 1050,200 1100,650 1400,250" 
+        fill="none" stroke="#013C87" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Nœuds Subtils aux Points d'Inflexion -->
+  <g fill="#ffffff" stroke="#013C87" stroke-width="3">
+    <circle cx="100" cy="600" r="8"/>
+    <circle cx="430" cy="400" r="6"/>
+    <circle cx="750" cy="200" r="8"/>
+    <circle cx="1075" cy="425" r="6"/>
+    <circle cx="1400" cy="250" r="8"/>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 800" width="1600" height="800">
+  <!-- Trajectoire découpée en 10 segments distincts séparés par des micro-espaces -->
+  <path d="M 100,550 
+           C 400,550 500,150 850,200 
+           C 1200,250 1300,650 1500,300" 
+        fill="none" 
+        stroke="#013C87" 
+        stroke-width="5" 
+        stroke-linecap="round" 
+        stroke-dasharray="125 12"/>
+</svg>

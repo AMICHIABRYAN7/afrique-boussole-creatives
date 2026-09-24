@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 800" width="1500" height="800">
+  <defs>
+    <pattern id="patternWaves" width="400" height="120" patternUnits="userSpaceOnUse">
+      <path d="M 0,40 Q 100,10 200,40 T 400,40" fill="none" stroke="#013C87" stroke-opacity="0.12" stroke-width="2"/>
+      <path d="M 0,80 Q 100,50 200,80 T 400,80" fill="none" stroke="#013C87" stroke-opacity="0.08" stroke-width="1.5"/>
+    </pattern>
+  </defs>
+
+  <rect width="1500" height="800" fill="url(#patternWaves)"/>
+</svg>

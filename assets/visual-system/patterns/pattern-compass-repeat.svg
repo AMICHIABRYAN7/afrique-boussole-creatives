@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <defs>
+    <pattern id="patternCompass" width="200" height="200" patternUnits="userSpaceOnUse">
+      <g stroke="#013C87" stroke-opacity="0.08" fill="none" stroke-width="1.5">
+        <!-- Boussole à (100, 100) -->
+        <circle cx="100" cy="100" r="35"/>
+        <circle cx="100" cy="100" r="30" stroke-dasharray="2 4"/>
+        <polygon points="100,72 106,100 100,95 94,100" fill="#013C87" fill-opacity="0.08"/>
+        <polygon points="100,128 94,100 100,105 106,100" fill="#013C87" fill-opacity="0.08"/>
+
+        <!-- Boussoles aux coins pour le raccord (0,0), (200,0), etc. -->
+        <circle cx="0" cy="0" r="35"/>
+        <polygon points="0, -28 6,0 0,-5 -6,0" fill="#013C87" fill-opacity="0.08"/>
+        <circle cx="200" cy="0" r="35"/>
+        <polygon points="200,-28 206,0 200,-5 194,0" fill="#013C87" fill-opacity="0.08"/>
+        <circle cx="0" cy="200" r="35"/>
+        <polygon points="0,172 6,200 0,195 -6,200" fill="#013C87" fill-opacity="0.08"/>
+        <circle cx="200" cy="200" r="35"/>
+        <polygon points="200,172 206,200 200,195 194,200" fill="#013C87" fill-opacity="0.08"/>
+      </g>
+    </pattern>
+  </defs>
+
+  <rect width="1000" height="1000" fill="url(#patternCompass)"/>
+</svg>

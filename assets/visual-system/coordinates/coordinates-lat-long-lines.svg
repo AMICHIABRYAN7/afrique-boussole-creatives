@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1500" width="1500" height="1500">
+  <g stroke="#013C87" stroke-opacity="0.15" fill="none" stroke-width="2">
+    <!-- Contour du Globe -->
+    <circle cx="750" cy="750" r="650" stroke-width="3"/>
+
+    <!-- Équateur et Méridien d'Origine -->
+    <line x1="100" y1="750" x2="1400" y2="750" stroke-width="2.5"/>
+    <line x1="750" y1="100" x2="750" y2="1400" stroke-width="2.5"/>
+
+    <!-- Lignes de Parallèles (Latitude) -->
+    <ellipse cx="750" cy="750" rx="650" ry="200"/>
+    <ellipse cx="750" cy="750" rx="650" ry="400"/>
+    <ellipse cx="750" cy="750" rx="650" ry="550"/>
+
+    <!-- Lignes de Méridiens (Longitude) -->
+    <ellipse cx="750" cy="750" rx="200" ry="650"/>
+    <ellipse cx="750" cy="750" rx="400" ry="650"/>
+    <ellipse cx="750" cy="750" rx="550" ry="650"/>
+  </g>
+</svg>

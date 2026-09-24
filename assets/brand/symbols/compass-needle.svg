@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <!-- Ombre portée douce pour élément d'animation -->
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="4" dy="10" stdDeviation="8" flood-color="#013C87" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#drop-shadow)">
+    <!-- Point d'ancrage / Centre de rotation (250, 250) -->
+
+    <!-- Aiguille NORD (Pointe Rouge avec facette sombre) -->
+    <!-- Côté droit pointe nord -->
+    <polygon points="250,40 280,250 250,230" fill="#E53E3E"/>
+    <!-- Côté gauche pointe nord (ombré) -->
+    <polygon points="250,40 250,230 220,250" fill="#C53030"/>
+
+    <!-- Aiguille SUD (Base Blanche avec accent Bleu Marine) -->
+    <!-- Côté droit pointe sud -->
+    <polygon points="250,460 220,250 250,270" fill="#FFFFFF" stroke="#013C87" stroke-width="1.5"/>
+    <!-- Côté gauche pointe sud -->
+    <polygon points="250,460 250,270 280,250" fill="#E5EDF5" stroke="#013C87" stroke-width="1.5"/>
+
+    <!-- Pivot / Anneau Central -->
+    <circle cx="250" cy="250" r="32" fill="#013C87"/>
+    <circle cx="250" cy="250" r="22" fill="#FFFFFF"/>
+    <circle cx="250" cy="250" r="12" fill="#013C87"/>
+    <circle cx="250" cy="250" r="4" fill="#FFFFFF"/>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <defs>
+    <!-- Grille de points 50px par 50px -->
+    <pattern id="gridDotsPattern" width="50" height="50" patternUnits="userSpaceOnUse">
+      <circle cx="25" cy="25" r="2" fill="#013C87" fill-opacity="0.12"/>
+    </pattern>
+  </defs>
+
+  <rect width="1000" height="1000" fill="url(#gridDotsPattern)"/>
+</svg>

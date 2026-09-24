@@ -1,0 +1,242 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Creative Output",
+  "description": "Metadata and specifications for deliverable creative output",
+  "type": "object",
+  "required": [
+    "project_name",
+    "format_type",
+    "dimensions",
+    "files"
+  ],
+  "properties": {
+    "project_name": {
+      "type": "string",
+      "description": "Project or creative name"
+    },
+    "version": {
+      "type": "string",
+      "description": "Version number (v1, v2, final, etc.)"
+    },
+    "created_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "created_by": {
+      "type": "string",
+      "description": "Designer/creator name"
+    },
+    "format_type": {
+      "type": "string",
+      "enum": [
+        "a4_flyer",
+        "a3_poster",
+        "social_1x1",
+        "social_4x5",
+        "social_9x16",
+        "web_banner_16x9",
+        "email_header",
+        "linkedin_post",
+        "facebook_post",
+        "instagram_reel",
+        "other"
+      ]
+    },
+    "dimensions": {
+      "type": "object",
+      "properties": {
+        "width": {
+          "type": "number"
+        },
+        "height": {
+          "type": "number"
+        },
+        "unit": {
+          "type": "string",
+          "enum": ["px", "mm", "inches"]
+        },
+        "aspect_ratio": {
+          "type": "string",
+          "description": "e.g., '16:9', '1:1', '4:5'"
+        }
+      }
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["filename", "format", "purpose"],
+        "properties": {
+          "filename": {
+            "type": "string"
+          },
+          "format": {
+            "type": "string",
+            "enum": ["jpeg", "png", "pdf", "tiff", "psd", "ai", "figma", "other"]
+          },
+          "resolution_dpi": {
+            "type": "number"
+          },
+          "color_space": {
+            "type": "string",
+            "enum": ["rgb", "cmyk", "grayscale"]
+          },
+          "file_size_mb": {
+            "type": "number"
+          },
+          "purpose": {
+            "type": "string",
+            "description": "e.g., 'web', 'print', 'email', 'social', 'editable'"
+          }
+        }
+      }
+    },
+    "content": {
+      "type": "object",
+      "properties": {
+        "primary_headline": {
+          "type": "string"
+        },
+        "secondary_headline": {
+          "type": "string"
+        },
+        "body_text": {
+          "type": "string"
+        },
+        "cta_text": {
+          "type": "string"
+        },
+        "cta_url": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "visual_elements": {
+      "type": "object",
+      "properties": {
+        "primary_color": {
+          "type": "string",
+          "description": "Primary brand color (hex)"
+        },
+        "secondary_color": {
+          "type": "string",
+          "description": "Secondary color (hex)"
+        },
+        "accent_color": {
+          "type": "string",
+          "description": "Accent color (hex)"
+        },
+        "logo_included": {
+          "type": "boolean"
+        },
+        "logo_version": {
+          "type": "string",
+          "enum": ["full", "mark", "white", "dark"]
+        },
+        "image_description": {
+          "type": "string",
+          "description": "Description of main image or visual"
+        },
+        "image_source": {
+          "type": "string",
+          "description": "Source of image (stock, commissioned, generated, etc.)"
+        }
+      }
+    },
+    "fonts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "font_family": {
+            "type": "string"
+          },
+          "font_size": {
+            "type": "number"
+          },
+          "font_weight": {
+            "type": "number"
+          },
+          "usage": {
+            "type": "string",
+            "description": "e.g., 'headline', 'body', 'cta'"
+          }
+        }
+      }
+    },
+    "accessibility": {
+      "type": "object",
+      "properties": {
+        "color_contrast_ratio": {
+          "type": "string",
+          "description": "e.g., '7:1', 'WCAG AA'"
+        },
+        "alt_text": {
+          "type": "string",
+          "description": "Alternative text for images"
+        },
+        "wcag_compliant": {
+          "type": "boolean"
+        }
+      }
+    },
+    "quality_checklist": {
+      "type": "object",
+      "properties": {
+        "brand_compliance": {
+          "type": "boolean",
+          "description": "Passed brand system verification"
+        },
+        "hierarchy_verified": {
+          "type": "boolean",
+          "description": "Primary message is clearly dominant"
+        },
+        "message_readable": {
+          "type": "boolean",
+          "description": "Readable within 2 seconds"
+        },
+        "cta_clear": {
+          "type": "boolean",
+          "description": "CTA is clear and actionable"
+        },
+        "no_typos": {
+          "type": "boolean"
+        },
+        "image_quality": {
+          "type": "boolean",
+          "description": "Image is professional quality"
+        },
+        "approved_for_publication": {
+          "type": "boolean"
+        }
+      }
+    },
+    "platform_specs": {
+      "type": "object",
+      "properties": {
+        "platforms": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "safe_zones_respected": {
+          "type": "boolean"
+        },
+        "mobile_tested": {
+          "type": "boolean"
+        }
+      }
+    },
+    "notes": {
+      "type": "string",
+      "description": "Any additional notes or considerations"
+    },
+    "related_files": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "References to related creatives (variations, other formats)"
+      }
+    }
+  }
+}

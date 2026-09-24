@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000" width="2000" height="2000">
+  <defs>
+    <!-- Répétition de la trame isométrique 100 x 173.2px -->
+    <pattern id="gridIsometricPattern" width="100" height="173.205" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 100 86.602 L 50 173.205 L 0 86.602 Z" fill="none" stroke="#013C87" stroke-width="1.5" stroke-opacity="0.10"/>
+      <path d="M 0 86.602 L 100 86.602 M 50 0 L 50 173.205" fill="none" stroke="#013C87" stroke-width="1.5" stroke-opacity="0.10"/>
+    </pattern>
+  </defs>
+
+  <rect width="2000" height="2000" fill="url(#gridIsometricPattern)"/>
+</svg>

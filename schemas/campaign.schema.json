@@ -1,0 +1,160 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Campaign Structure",
+  "description": "Structure for multi-creative campaigns",
+  "type": "object",
+  "required": [
+    "campaign_name",
+    "objective",
+    "duration",
+    "audience",
+    "primary_message"
+  ],
+  "properties": {
+    "campaign_name": {
+      "type": "string",
+      "description": "Campaign identifier"
+    },
+    "campaign_tagline": {
+      "type": "string",
+      "description": "Short campaign tagline or slogan"
+    },
+    "objective": {
+      "type": "string",
+      "description": "Campaign-level business objective"
+    },
+    "duration": {
+      "type": "object",
+      "properties": {
+        "start_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "end_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "duration_days": {
+          "type": "number"
+        }
+      }
+    },
+    "audience": {
+      "type": "string",
+      "description": "Target audience for entire campaign"
+    },
+    "primary_message": {
+      "type": "string",
+      "description": "Core message across all campaign materials"
+    },
+    "campaign_visual_concept": {
+      "type": "string",
+      "description": "Central visual idea that ties campaign together"
+    },
+    "master_creative": {
+      "type": "object",
+      "properties": {
+        "hero_image": {
+          "type": "string",
+          "description": "Path or filename of master hero image"
+        },
+        "creative_territories": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "enum": ["authority", "opportunity", "human_impact", "navigation", "data_expertise", "education"]
+              },
+              "headline": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          },
+          "description": "Multiple creative angles for campaign"
+        }
+      }
+    },
+    "formats": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "format_type": {
+            "type": "string"
+          },
+          "variations": {
+            "type": "number",
+            "description": "Number of variations (e.g., 4 territorial versions)"
+          },
+          "dimensions": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "channels": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["instagram", "linkedin", "facebook", "email", "web", "print", "tiktok"]
+      },
+      "description": "Channels for campaign distribution"
+    },
+    "schedule": {
+      "type": "object",
+      "properties": {
+        "phase_1_launch": {
+          "type": "string",
+          "format": "date"
+        },
+        "phase_2_amplify": {
+          "type": "string",
+          "format": "date"
+        },
+        "phase_3_sustain": {
+          "type": "string",
+          "format": "date"
+        },
+        "phase_4_conclude": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "success_metrics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "metric": {
+            "type": "string"
+          },
+          "target": {
+            "type": "number"
+          },
+          "unit": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "budget": {
+      "type": "object",
+      "properties": {
+        "total_budget": {
+          "type": "number"
+        },
+        "channel_allocation": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  }
+}

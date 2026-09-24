@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600">
+  <defs>
+    <!-- Dégradé pour effet d'estompage fluide aux extrémités -->
+    <linearGradient id="routeFade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#013C87" stop-opacity="0.05"/>
+      <stop offset="15%" stop-color="#013C87" stop-opacity="1"/>
+      <stop offset="85%" stop-color="#013C87" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#013C87" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ligne de route en S -->
+  <path d="M 80,450 
+           C 350,450 380,150 600,150 
+           C 820,150 850,450 1120,200" 
+        fill="none" 
+        stroke="url(#routeFade)" 
+        stroke-width="8" 
+        stroke-linecap="round"/>
+
+  <!-- Points d'ancrage subtils sur la ligne -->
+  <circle cx="600" cy="150" r="5" fill="#013C87"/>
+</svg>

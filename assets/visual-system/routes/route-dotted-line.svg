@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 600" width="1400" height="600">
+  <defs>
+    <!-- Dégradé d'opacité pour l'effet d'estompage progressif -->
+    <linearGradient id="dotFade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#013C87" stop-opacity="1"/>
+      <stop offset="70%" stop-color="#013C87" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#013C87" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ligne de points régulièrement espacés -->
+  <path d="M 100,450 
+           C 450,450 500,150 850,150 
+           C 1100,150 1200,350 1300,300" 
+        fill="none" 
+        stroke="url(#dotFade)" 
+        stroke-width="8" 
+        stroke-linecap="round" 
+        stroke-dasharray="0.1 22"/>
+</svg>

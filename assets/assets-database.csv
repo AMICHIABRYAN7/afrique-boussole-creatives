@@ -1,0 +1,16 @@
+Categorie,Fichier,Type,Format,Dimensions,Taille_Ko,Usage,Date_Ajout,Status,Notes
+Brand,afrique-boussole-logo.svg,Logo,SVG,Vectoriel,15,Site web/Print,2026-09-24,Actif,Version principale claire
+Brand,afrique-boussole-logo-dark.svg,Logo,SVG,Vectoriel,15,Dark mode,2026-09-24,Actif,Version sombre
+Brand,afrique-boussole-emblem.svg,Embleme,SVG,Vectoriel,8,Favicon/Icon,2026-09-24,Actif,Symbole seul
+Brand,afrique-boussole-emblem-dark.svg,Embleme,SVG,Vectoriel,8,Favicon dark,2026-09-24,Actif,Symbole dark
+Brand,logo.png,Logo,PNG,1024x1024,250,Social media,2026-09-24,Actif,Export bitmap HD
+Brand,LOGO.svg,Icon,SVG,Vectoriel,12,Branding,2026-09-24,Actif,Variante LASTED
+Team,team_director_general_1788911292003-Tm0lKkVp.jpg,Photo,JPG,1200x1200,180,Profil CEO,2026-09-24,Actif,Directeur General
+Team,team_tech_director_1788911305837-BLn5O_Av.jpg,Photo,JPG,1200x1200,175,Profil CTO,2026-09-24,Actif,Directeur Technique
+Team,team_academy_director_1788911321642-RGJiGfpA.jpg,Photo,JPG,1200x1200,185,Profil CAO,2026-09-24,Actif,Directeur Academie
+Team,team_security_lead_1788911332683-C0chyj0L.jpg,Photo,JPG,1200x1200,170,Profil CSO,2026-09-24,Actif,Responsable Securite
+Visuals,gab_3d_compass_africa_1788834669102-DNCQshGT.jpg,Render 3D,JPG,1920x1080,450,Hero section,2026-09-24,Actif,Boussole + Afrique
+Visuals,gab_3d_tech_hub_1788834690273-BgEVo-eO.jpg,Render 3D,JPG,1920x1080,420,Background,2026-09-24,Actif,Hub technologique
+Visuals,vsl_video_poster_1788911346619-BtmEfH9l.jpg,Thumbnail,JPG,1280x720,200,Video cover,2026-09-24,Actif,VSL poster
+Projects,LASTED_2-removebg-preview (1).png,Logo client,PNG,800x800,120,Portfolio,2026-09-24,Actif,Projet LASTED
+Projects,logo.svg,Logo client,SVG,Vectoriel,18,Client assets,2026-09-24,Actif,LASTED vectoriel

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 700" width="500" height="700">
+  <!-- Fond Blanc -->
+  <rect width="500" height="700" fill="#ffffff"/>
+
+  <g transform="translate(0, 20)">
+    <!-- Corps du Pin (Goutte d'eau arrondie) -->
+    <path d="M 250,590 
+             C 230,540 90,360 90,240 
+             C 90,151.6 161.6,80 250,80 
+             C 338.4,80 410,151.6 410,240 
+             C 410,360 270,540 250,590 Z" 
+          fill="#013C87" stroke="#013C87" stroke-width="4" stroke-linejoin="round"/>
+
+    <!-- Point Central (Vert #1D7742 avec bordure blanche) -->
+    <circle cx="250" cy="240" r="65" fill="#1D7742" stroke="#ffffff" stroke-width="8"/>
+  </g>
+</svg>

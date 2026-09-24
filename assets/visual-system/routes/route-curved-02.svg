@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1000" width="1500" height="1000">
+  <defs>
+    <!-- Dégradé Bleu Marine (#013C87) vers Vert (#1D7742) -->
+    <linearGradient id="routeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#013C87"/>
+      <stop offset="50%" stop-color="#013C87"/>
+      <stop offset="100%" stop-color="#1D7742"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Route Serpentine Complexe -->
+  <path d="M 100,200 
+           C 350,100 400,500 650,450 
+           C 900,400 800,850 1050,800 
+           C 1300,750 1250,300 1400,250" 
+        fill="none" stroke="url(#routeGradient)" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Points d'Étape Intermédiaires -->
+  <circle cx="100" cy="200" r="7" fill="#013C87"/>
+  <circle cx="650" cy="450" r="6" fill="#013C87"/>
+  <circle cx="1050" cy="800" r="6" fill="#1D7742"/>
+  <circle cx="1400" cy="250" r="7" fill="#1D7742"/>
+</svg>

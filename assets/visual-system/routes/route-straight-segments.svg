@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <!-- Lignes Angulaires Connectées -->
+  <polyline points="100,650 350,650 550,350 800,350 1000,150 1100,150" 
+            fill="none" stroke="#013C87" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Nœuds de Connexion (Style Métro) -->
+  <g fill="#ffffff" stroke="#013C87" stroke-width="4">
+    <circle cx="100" cy="650" r="10"/>
+    <circle cx="350" cy="650" r="8"/>
+    <circle cx="550" cy="350" r="8"/>
+    <circle cx="800" cy="350" r="8"/>
+    <circle cx="1000" cy="150" r="8"/>
+    <circle cx="1100" cy="150" r="10"/>
+  </g>
+</svg>

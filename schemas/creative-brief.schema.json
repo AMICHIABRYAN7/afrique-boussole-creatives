@@ -1,0 +1,340 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Creative Brief",
+  "description": "Structured brief for Afrique Boussole creative production",
+  "type": "object",
+  "required": [
+    "project_name",
+    "objective",
+    "audience",
+    "primary_message",
+    "cta",
+    "formats"
+  ],
+  "properties": {
+    "project_name": {
+      "type": "string",
+      "description": "Project or campaign name"
+    },
+    "date_created": {
+      "type": "string",
+      "format": "date",
+      "description": "Date brief was created (YYYY-MM-DD)"
+    },
+    "client": {
+      "type": "string",
+      "description": "Client name or internal team"
+    },
+    "brief_prepared_by": {
+      "type": "string",
+      "description": "Name of person preparing brief"
+    },
+    "objective": {
+      "type": "string",
+      "enum": [
+        "lead_generation",
+        "brand_awareness",
+        "event_promotion",
+        "product_launch",
+        "educational",
+        "thought_leadership",
+        "community_engagement",
+        "recruitment",
+        "partnership_announcement",
+        "institutional_communication"
+      ],
+      "description": "Primary marketing objective"
+    },
+    "objective_details": {
+      "type": "string",
+      "description": "Additional details about objective (e.g., specific KPI, target number of leads)"
+    },
+    "audience": {
+      "type": "object",
+      "required": ["primary"],
+      "properties": {
+        "primary": {
+          "type": "string",
+          "description": "Primary target audience (e.g., African entrepreneurs, C-suite executives)"
+        },
+        "secondary": {
+          "type": "string",
+          "description": "Secondary or supporting audience"
+        },
+        "age_range": {
+          "type": "string",
+          "description": "Age range (e.g., 25-45)"
+        },
+        "geographic": {
+          "type": "string",
+          "description": "Geographic focus (e.g., Sub-Saharan Africa, East Africa)"
+        },
+        "characteristics": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Key characteristics (e.g., decision-makers, business owners)"
+        }
+      }
+    },
+    "context": {
+      "type": "object",
+      "properties": {
+        "where_used": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "social_media",
+              "email",
+              "print",
+              "web",
+              "out_of_home",
+              "presentation",
+              "event",
+              "partnership"
+            ]
+          },
+          "description": "Where will creative be displayed/used"
+        },
+        "when_used": {
+          "type": "string",
+          "description": "Timing or season (e.g., Q4 2024, evergreen)"
+        },
+        "urgency": {
+          "type": "string",
+          "enum": ["low", "medium", "high"],
+          "description": "Urgency level for deadline"
+        }
+      }
+    },
+    "strategic_insight": {
+      "type": "object",
+      "properties": {
+        "problem": {
+          "type": "string",
+          "description": "What problem or challenge does audience face?"
+        },
+        "opportunity": {
+          "type": "string",
+          "description": "What opportunity do we offer?"
+        },
+        "competitive_context": {
+          "type": "string",
+          "description": "How do we stand out from competition?"
+        },
+        "afrique_boussole_positioning": {
+          "type": "string",
+          "description": "How does this reinforce Afrique Boussole positioning?"
+        }
+      }
+    },
+    "creative_direction": {
+      "type": "object",
+      "properties": {
+        "suggested_angle": {
+          "type": "string",
+          "enum": [
+            "authority",
+            "opportunity",
+            "human_impact",
+            "navigation",
+            "data_expertise",
+            "education",
+            "open"
+          ],
+          "description": "Suggested creative angle (or 'open' to let creator choose)"
+        },
+        "tone": {
+          "type": "string",
+          "description": "Tone of messaging (e.g., professional, inspirational, urgent)"
+        },
+        "visual_direction": {
+          "type": "string",
+          "description": "Any specific visual direction (e.g., photography, illustration, data visualization)"
+        },
+        "must_include_elements": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Elements that must be included (logo, specific image, testimonial, etc.)"
+        },
+        "must_avoid_elements": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Elements to avoid (jargon, clichés, specific imagery)"
+        }
+      }
+    },
+    "messaging": {
+      "type": "object",
+      "required": ["primary_message"],
+      "properties": {
+        "primary_message": {
+          "type": "string",
+          "description": "Single, most important message (the headline)"
+        },
+        "secondary_message": {
+          "type": "string",
+          "description": "Supporting message or value proposition"
+        },
+        "proof_points": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Supporting facts, statistics, testimonials, or credentials"
+        },
+        "key_benefits": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Key benefits to communicate"
+        }
+      }
+    },
+    "cta": {
+      "type": "object",
+      "required": ["primary_action"],
+      "properties": {
+        "primary_action": {
+          "type": "string",
+          "enum": [
+            "sign_up",
+            "download",
+            "register",
+            "contact",
+            "learn_more",
+            "apply",
+            "watch",
+            "share",
+            "purchase",
+            "visit_website"
+          ],
+          "description": "Primary call-to-action"
+        },
+        "cta_copy": {
+          "type": "string",
+          "description": "Exact text for CTA button/link (e.g., 'Sign Up for Webinar')"
+        },
+        "cta_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL or destination for CTA"
+        },
+        "secondary_action": {
+          "type": "string",
+          "description": "Optional secondary action"
+        }
+      }
+    },
+    "formats": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "a4_flyer",
+          "a3_poster",
+          "social_1x1",
+          "social_4x5",
+          "social_9x16",
+          "web_banner_16x9",
+          "email_header",
+          "linkedin_image",
+          "facebook_image",
+          "print_custom",
+          "other"
+        ]
+      },
+      "description": "Required formats for this creative"
+    },
+    "brand_requirements": {
+      "type": "object",
+      "properties": {
+        "logo_required": {
+          "type": "boolean",
+          "description": "Must logo be visible?"
+        },
+        "logo_size": {
+          "type": "string",
+          "enum": ["full", "mark", "small", "none"],
+          "description": "Logo size/version to use"
+        },
+        "color_palette": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "primary_blue_only",
+              "primary_green_only",
+              "blue_green",
+              "full_palette",
+              "black_white"
+            ]
+          },
+          "description": "Color palette constraints"
+        },
+        "brand_elements_to_include": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Specific brand elements (compass, map, etc.)"
+        }
+      }
+    },
+    "technical_specs": {
+      "type": "object",
+      "properties": {
+        "resolution": {
+          "type": "string",
+          "enum": ["web_72dpi", "print_300dpi", "both"],
+          "description": "Resolution requirements"
+        },
+        "color_space": {
+          "type": "string",
+          "enum": ["rgb", "cmyk", "both"],
+          "description": "Color space (RGB for digital, CMYK for print)"
+        },
+        "file_formats": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["jpeg", "png", "pdf", "tiff", "psd", "ai"]
+          },
+          "description": "Required file formats for delivery"
+        }
+      }
+    },
+    "deadline": {
+      "type": "object",
+      "properties": {
+        "design_due": {
+          "type": "string",
+          "format": "date",
+          "description": "Design approval deadline"
+        },
+        "final_delivery": {
+          "type": "string",
+          "format": "date",
+          "description": "Final files delivery deadline"
+        },
+        "go_live_date": {
+          "type": "string",
+          "format": "date",
+          "description": "Date creative goes live"
+        }
+      }
+    },
+    "approval_process": {
+      "type": "object",
+      "properties": {
+        "approvers": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "People who must approve before publication"
+        },
+        "revision_rounds": {
+          "type": "number",
+          "description": "Expected revision rounds (typically 1-2)"
+        }
+      }
+    },
+    "additional_notes": {
+      "type": "string",
+      "description": "Any additional context, constraints, or information"
+    }
+  }
+}

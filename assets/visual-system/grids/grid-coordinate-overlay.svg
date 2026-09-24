@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2500 2500" width="2500" height="2500">
+  <g stroke="#E2E8F0" stroke-opacity="0.45" stroke-linecap="round" fill="none" font-family="monospace" font-size="14" fill-opacity="0.5">
+    <!-- Grille de méridiens et parallèles incurvés (Projection cartographique) -->
+    <path d="M 0,250 C 800,280 1700,280 2500,250 M 0,500 C 800,540 1700,540 2500,500 M 0,750 C 800,790 1700,790 2500,750 M 0,1000 C 800,1030 1700,1030 2500,1000 M 0,1250 L 2500,1250 M 0,1500 C 800,1470 1700,1470 2500,1500 M 0,1750 C 800,1710 1700,1710 2500,1750 M 0,2000 C 800,1960 1700,1960 2500,2000 M 0,2250 C 800,2220 1700,2220 2500,2250" stroke-width="1.5"/>
+    
+    <path d="M 250,0 C 280,800 280,1700 250,2500 M 500,0 C 540,800 540,1700 500,2500 M 750,0 C 790,800 790,1700 750,2500 M 1000,0 C 1030,800 1030,1700 1000,2500 M 1250,0 L 1250,2500 M 1500,0 C 1470,800 1470,1700 1500,2500 M 1750,0 C 1710,800 1710,1700 1750,2500 M 2000,0 C 1960,800 1960,1700 2000,2500 M 2250,0 C 2220,800 2220,1700 2250,2500" stroke-width="1.5"/>
+
+    <!-- Marqueurs de Degrés le long des axes -->
+    <text x="1260" y="260" fill="#E2E8F0">40°00'N</text>
+    <text x="1260" y="510" fill="#E2E8F0">30°00'N</text>
+    <text x="1260" y="760" fill="#E2E8F0">20°00'N</text>
+    <text x="1260" y="1010" fill="#E2E8F0">10°00'N</text>
+    <text x="1260" y="1240" fill="#E2E8F0" font-weight="bold">00°00' EQUATOR</text>
+    <text x="1260" y="1510" fill="#E2E8F0">10°00'S</text>
+    <text x="1260" y="1760" fill="#E2E8F0">20°00'S</text>
+    <text x="1260" y="2010" fill="#E2E8F0">30°00'S</text>
+
+    <!-- Micro-croillons d'intersections -->
+    <circle cx="1250" cy="1250" r="8" stroke="#E2E8F0" stroke-width="2"/>
+    <circle cx="1250" cy="1250" r="2" fill="#E2E8F0"/>
+  </g>
+</svg>

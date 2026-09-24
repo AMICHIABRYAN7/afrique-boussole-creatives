@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1500" width="1500" height="1500">
+  <defs>
+    <!-- Motif Hexagone répétitif -->
+    <pattern id="gridHexPattern" width="120" height="103.923" patternUnits="userSpaceOnUse">
+      <path d="M 30,0 L 90,0 L 120,51.96 L 90,103.92 L 30,103.92 L 0,51.96 Z" fill="none" stroke="#1D7742" stroke-width="1.5" stroke-opacity="0.08"/>
+      <path d="M 120,51.96 L 150,51.96 M 90,103.92 L 120,155.88" fill="none" stroke="#1D7742" stroke-width="1.5" stroke-opacity="0.08"/>
+    </pattern>
+  </defs>
+
+  <rect width="1500" height="1500" fill="url(#gridHexPattern)"/>
+</svg>

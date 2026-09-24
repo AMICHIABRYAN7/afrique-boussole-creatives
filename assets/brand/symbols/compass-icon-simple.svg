@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <!-- Fond Blanc -->
+  <rect width="1000" height="1000" fill="#ffffff"/>
+  
+  <!-- Anneau Extérieur -->
+  <circle cx="500" cy="500" r="360" fill="none" stroke="#013C87" stroke-width="16"/>
+  <circle cx="500" cy="500" r="330" fill="none" stroke="#013C87" stroke-width="4"/>
+  
+  <!-- Points Cardinaux (N, S, E, W) -->
+  <text x="500" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="700" fill="#013C87" text-anchor="middle" dominant-baseline="middle">N</text>
+  <text x="500" y="890" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="700" fill="#013C87" text-anchor="middle" dominant-baseline="middle">S</text>
+  <text x="890" y="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="700" fill="#013C87" text-anchor="middle" dominant-baseline="middle">E</text>
+  <text x="110" y="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="700" fill="#013C87" text-anchor="middle" dominant-baseline="middle">W</text>
+  
+  <!-- Repères d'alignement -->
+  <line x1="500" y1="150" x2="500" y2="162" stroke="#013C87" stroke-width="6" stroke-linecap="round"/>
+  <line x1="500" y1="838" x2="500" y2="850" stroke="#013C87" stroke-width="6" stroke-linecap="round"/>
+  <line x1="838" y1="500" x2="850" y2="500" stroke="#013C87" stroke-width="6" stroke-linecap="round"/>
+  <line x1="150" y1="500" x2="162" y2="500" stroke="#013C87" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Rose des vents géométrique à 4 branches -->
+  <g fill="#013C87" stroke="#ffffff" stroke-width="3" stroke-linejoin="round">
+    <!-- Nord -->
+    <polygon points="500,190 535,465 500,440" />
+    <polygon points="500,190 500,440 465,465" />
+    
+    <!-- Sud -->
+    <polygon points="500,810 465,535 500,560" />
+    <polygon points="500,810 500,560 535,535" />
+    
+    <!-- Est -->
+    <polygon points="810,500 535,535 560,500" />
+    <polygon points="810,500 560,500 535,465" />
+    
+    <!-- Ouest -->
+    <polygon points="190,500 465,465 440,500" />
+    <polygon points="190,500 440,500 465,535" />
+  </g>
+  
+  <!-- Point central -->
+  <circle cx="500" cy="500" r="18" fill="#013C87" stroke="#ffffff" stroke-width="4"/>
+</svg>

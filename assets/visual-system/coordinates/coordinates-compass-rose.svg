@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <!-- Fond Blanc -->
+  <rect width="1000" height="1000" fill="#ffffff"/>
+
+  <!-- Cercles d'Encadrement -->
+  <circle cx="500" cy="500" r="450" fill="none" stroke="#013C87" stroke-width="4"/>
+  <circle cx="500" cy="500" r="430" fill="none" stroke="#013C87" stroke-width="1.5"/>
+
+  <!-- 8 Petites Branches Secondaires (Tertiaires) -->
+  <g fill="#013C87" opacity="0.4">
+    <polygon points="500,500 512,320 500,280 488,320"/>
+    <polygon points="500,500 680,512 720,500 680,488"/>
+    <polygon points="500,500 512,680 500,720 488,680"/>
+    <polygon points="500,500 320,512 280,500 320,488"/>
+  </g>
+
+  <!-- 4 Branches Intercardinales (N-E, S-E, S-O, N-O) - Vert #1D7742 -->
+  <g fill="#1D7742" stroke="#ffffff" stroke-width="1.5">
+    <polygon points="500,500 530,420 730,270 480,470"/>
+    <polygon points="500,500 580,480 730,730 520,530"/>
+    <polygon points="500,500 470,580 270,730 520,530"/>
+    <polygon points="500,500 420,520 270,270 480,430"/>
+  </g>
+
+  <!-- 4 Branches Cardinales Principales (N, S, E, W) - Bleu Marine #013C87 -->
+  <g stroke="#ffffff" stroke-width="2" stroke-linejoin="round">
+    <!-- Nord -->
+    <polygon points="500,120 535,465 500,440" fill="#013C87"/>
+    <polygon points="500,120 500,440 465,465" fill="#013C87" opacity="0.75"/>
+    <!-- Sud -->
+    <polygon points="500,880 465,535 500,560" fill="#013C87"/>
+    <polygon points="500,880 500,560 535,535" fill="#013C87" opacity="0.75"/>
+    <!-- Est -->
+    <polygon points="880,500 535,535 560,500" fill="#013C87"/>
+    <polygon points="880,500 560,500 535,465" fill="#013C87" opacity="0.75"/>
+    <!-- Ouest -->
+    <polygon points="120,500 465,465 440,500" fill="#013C87"/>
+    <polygon points="120,500 440,500 465,535" fill="#013C87" opacity="0.75"/>
+  </g>
+
+  <!-- Textes N E S W -->
+  <text x="500" y="85" font-family="sans-serif" font-size="36" font-weight="800" fill="#013C87" text-anchor="middle">N</text>
+  <text x="500" y="945" font-family="sans-serif" font-size="36" font-weight="800" fill="#013C87" text-anchor="middle">S</text>
+  <text x="940" y="512" font-family="sans-serif" font-size="36" font-weight="800" fill="#013C87" text-anchor="middle">E</text>
+  <text x="60" y="512" font-family="sans-serif" font-size="36" font-weight="800" fill="#013C87" text-anchor="middle">W</text>
+
+  <!-- Centre Cadran -->
+  <circle cx="500" cy="500" r="22" fill="#ffffff" stroke="#013C87" stroke-width="4"/>
+  <circle cx="500" cy="500" r="10" fill="#1D7742"/>
+</svg>

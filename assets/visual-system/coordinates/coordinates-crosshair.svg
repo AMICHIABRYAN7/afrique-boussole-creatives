@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <g stroke="#013C87" fill="none">
+    <!-- Lignes de Croisement Principales -->
+    <line x1="80" y1="300" x2="520" y2="300" stroke-width="1.5"/>
+    <line x1="300" y1="80" x2="300" y2="520" stroke-width="1.5"/>
+
+    <!-- Cercles de Visée Intermédiaires -->
+    <circle cx="300" cy="300" r="180" stroke-width="1" stroke-dasharray="4 4" opacity="0.6"/>
+    <circle cx="300" cy="300" r="100" stroke-width="1.5"/>
+    <circle cx="300" cy="300" r="30" stroke-width="1"/>
+
+    <!-- Segments d'Arcs Extérieurs -->
+    <path d="M 260,80 A 220,220 0 0,1 340,80" stroke-width="3"/>
+    <path d="M 520,260 A 220,220 0 0,1 520,340" stroke-width="3"/>
+    <path d="M 340,520 A 220,220 0 0,1 260,520" stroke-width="3"/>
+    <path d="M 80,340 A 220,220 0 0,1 80,260" stroke-width="3"/>
+
+    <!-- Point Central de Cible -->
+    <circle cx="300" cy="300" r="3" fill="#013C87"/>
+  </g>
+</svg>

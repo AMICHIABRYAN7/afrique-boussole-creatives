@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200">
+  <!-- Fond Blanc -->
+  <rect width="1200" height="1200" fill="#ffffff"/>
+
+  <!-- Réticule & Grille de Précision -->
+  <g stroke="#013C87" stroke-opacity="0.2" stroke-width="1.5">
+    <line x1="100" y1="600" x2="1100" y2="600"/>
+    <line x1="600" y1="100" x2="600" y2="1100"/>
+    <circle cx="600" cy="600" r="500" fill="none"/>
+    <circle cx="600" cy="600" r="400" fill="none" stroke-dasharray="4 8"/>
+    <circle cx="600" cy="600" r="300" fill="none"/>
+  </g>
+
+  <!-- Anneau de Graduation 360° (Ticks & Chiffres) -->
+  <g stroke="#013C87" stroke-width="2">
+    <circle cx="600" cy="600" r="460" fill="none"/>
+    <!-- Repères principaux -->
+    <line x1="600" y1="130" x2="600" y2="150"/>
+    <line x1="1050" y1="600" x2="1070" y2="600"/>
+    <line x1="600" y1="1050" x2="600" y2="1070"/>
+    <line x1="130" y1="600" x2="150" y2="600"/>
+  </g>
+
+  <g font-family="monospace" font-size="20" font-weight="700" fill="#013C87" text-anchor="middle" dominant-baseline="central">
+    <text x="600" y="115">000° N</text>
+    <text x="1090" y="600">090° E</text>
+    <text x="600" y="1085">180° S</text>
+    <text x="110" y="600">270° W</text>
+  </g>
+
+  <!-- Rose des Vents Centrale Integrée -->
+  <g stroke="#ffffff" stroke-width="2" stroke-linejoin="round">
+    <!-- Branches Intercardinales Vertes (#1D7742) -->
+    <polygon points="600,600 620,530 770,430 580,580" fill="#1D7742"/>
+    <polygon points="600,600 670,620 770,770 620,580" fill="#1D7742"/>
+    <polygon points="600,600 580,670 430,770 620,580" fill="#1D7742"/>
+    <polygon points="600,600 530,580 430,430 580,580" fill="#1D7742"/>
+
+    <!-- Branches Cardinales Bleu Marine (#013C87) -->
+    <polygon points="600,220 630,570 600,550" fill="#013C87"/>
+    <polygon points="600,220 600,550 570,570" fill="#013C87" opacity="0.75"/>
+    <polygon points="600,980 570,630 600,650" fill="#013C87"/>
+    <polygon points="600,980 600,650 630,630" fill="#013C87" opacity="0.75"/>
+    <polygon points="980,600 630,630 650,600" fill="#013C87"/>
+    <polygon points="980,600 650,600 630,570" fill="#013C87" opacity="0.75"/>
+    <polygon points="220,600 570,570 550,600" fill="#013C87"/>
+    <polygon points="220,600 550,600 570,630" fill="#013C87" opacity="0.75"/>
+  </g>
+
+  <!-- Cœur de Cible -->
+  <circle cx="600" cy="600" r="24" fill="#ffffff" stroke="#013C87" stroke-width="4"/>
+  <circle cx="600" cy="600" r="10" fill="#1D7742"/>
+</svg>

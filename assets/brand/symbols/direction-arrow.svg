@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300">
+  <!-- Flèche Directionnelle Moderne avec Extrémité Légèrement Arondie -->
+  <path d="M 60,110 
+           L 380,110 
+           L 380,50 
+           C 380,42 390,38 396,44 
+           L 534,141 
+           C 539,146 539,154 534,159 
+           L 396,256 
+           C 390,262 380,258 380,250 
+           L 380,190 
+           L 60,190 
+           C 50,190 40,180 40,170 
+           L 40,130 
+           C 40,120 50,110 60,110 Z" 
+        fill="#013C87"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000" width="2000" height="2000">
+  <defs>
+    <!-- Motif mineur (divisions de 40px) -->
+    <pattern id="gridMinorBold" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#013C87" stroke-width="1" stroke-opacity="0.12"/>
+    </pattern>
+    <!-- Motif majeur (10x10 carreaux de 200px) -->
+    <pattern id="gridMajorBold" width="200" height="200" patternUnits="userSpaceOnUse">
+      <rect width="200" height="200" fill="url(#gridMinorBold)"/>
+      <path d="M 200 0 L 0 0 0 200" fill="none" stroke="#013C87" stroke-width="3" stroke-opacity="0.25"/>
+    </pattern>
+  </defs>
+
+  <rect width="2000" height="2000" fill="url(#gridMajorBold)"/>
+</svg>
