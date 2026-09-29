@@ -1,0 +1,240 @@
+{
+  "schema_version": "1.0",
+  "catalog_name": "Afrique Boussole Creative Assets",
+  "description": "JSON catalog of all Afrique Boussole brand assets for deterministic image generation",
+  "generated": "2026-09-29",
+  "use_case": "Structured prompt generation for Gemini Nano Banana Pro / Claude image generation",
+  
+  "brand_identity": {
+    "company": "AFRIQUE BOUSSOLE",
+    "mission": "Strategic consulting and innovation for African business",
+    "tagline": "STRATÉGIE • INNOVATION • DATA",
+    "primary_colors": {
+      "blue": {
+        "name": "primary_blue_corporate",
+        "hex": "#013C87",
+        "rgb": "rgb(1, 60, 135)",
+        "usage": ["primary_background", "main_text", "dominant_elements"],
+        "description": "Deep corporate blue - must use EXACTLY this hex",
+        "forbidden_approximations": ["navy", "dark blue", "similar shades"]
+      },
+      "green": {
+        "name": "primary_green_accent",
+        "hex": "#1D7742",
+        "rgb": "rgb(29, 119, 66)",
+        "usage": ["CTA_buttons", "accent_elements", "secondary_highlights"],
+        "description": "Professional green - use for calls-to-action",
+        "forbidden_approximations": ["forest green", "dark green", "similar shades"]
+      },
+      "white": {
+        "name": "neutral_white",
+        "hex": "#FFFFFF",
+        "rgb": "rgb(255, 255, 255)",
+        "usage": ["text_on_dark", "backgrounds", "contrast"],
+        "description": "Pure white for maximum contrast"
+      },
+      "ivory": {
+        "name": "neutral_ivory",
+        "hex": "#F7F4EC",
+        "rgb": "rgb(247, 244, 236)",
+        "usage": ["subtle_background", "secondary_text", "accent_background"],
+        "description": "Warm ivory tone"
+      }
+    }
+  },
+
+  "brand_assets": {
+    "logos": [
+      {
+        "id": "logo_primary",
+        "name": "AFRIQUE BOUSSOLE Primary Logo",
+        "file_path": "assets/brand/logos/afrique-boussole-logo.svg",
+        "description": "Official full logo with compass icon and wordmark",
+        "dimensions": "variable (SVG)",
+        "colors": ["#013C87", "#1D7742"],
+        "usage_rules": [
+          "NEVER recreate this logo from memory",
+          "ALWAYS use the SVG file exactly",
+          "Can be placed: top-left, top-center, centered",
+          "Minimum size: 5% of image",
+          "Maximum size: 25% of image",
+          "Preserve aspect ratio",
+          "Do not modify colors"
+        ],
+        "preservation_rules": {
+          "color_exactness": "exact_hex_only",
+          "modification": "forbidden",
+          "scaling": "allowed_proportional",
+          "rotation": "not_recommended"
+        },
+        "recommended_positions": [
+          {"position": "top-left", "size": "15-20%", "context": "professional_corporate"},
+          {"position": "top-center", "size": "10-15%", "context": "centered_design"},
+          {"position": "centered", "size": "20-30%", "context": "hero_image"}
+        ]
+      },
+      {
+        "id": "logo_dark",
+        "name": "AFRIQUE BOUSSOLE Logo - Dark Variant",
+        "file_path": "assets/brand/logos/afrique-boussole-logo-dark.svg",
+        "description": "Dark variant for light backgrounds",
+        "usage_rules": ["Use on light/white backgrounds only"]
+      },
+      {
+        "id": "emblem_primary",
+        "name": "AFRIQUE BOUSSOLE Emblem",
+        "file_path": "assets/brand/logos/afrique-boussole-emblem.svg",
+        "description": "Compass mark only - compact version",
+        "usage_rules": ["Use for icons, favicons, small placements"]
+      }
+    ],
+    "symbols": [
+      {
+        "id": "compass_simple",
+        "name": "Compass Icon - Simple",
+        "file_path": "assets/brand/symbols/compass-icon-simple.svg",
+        "usage": ["background_decoration", "layout_accent", "symbol_element"],
+        "colors": ["#013C87", "#1D7742"]
+      },
+      {
+        "id": "compass_detailed",
+        "name": "Compass Icon - Detailed",
+        "file_path": "assets/brand/symbols/compass-icon-detailed.svg",
+        "usage": ["hero_element", "focal_point", "prominent_placement"],
+        "colors": ["#013C87"]
+      },
+      {
+        "id": "arrow_direction",
+        "name": "Direction Arrow",
+        "file_path": "assets/brand/symbols/direction-arrow.svg",
+        "usage": ["callout", "emphasis", "CTA_indicator"],
+        "colors": ["#1D7742"]
+      },
+      {
+        "id": "location_pin",
+        "name": "Location Pin",
+        "file_path": "assets/brand/symbols/location-pin.svg",
+        "usage": ["map_element", "geographic_reference", "layout_callout"],
+        "colors": ["#013C87"]
+      }
+    ]
+  },
+
+  "composition_templates": {
+    "flyer_standard_a4": {
+      "format": "A4 (210x297mm or 1080x1440px)",
+      "structure": {
+        "header": {
+          "height_percent": 30,
+          "background": "#013C87",
+          "elements": [
+            {"type": "logo", "id": "logo_primary", "position": "top-left", "size": "15%"},
+            {"type": "headline", "color": "#FFFFFF", "size": "48pt", "weight": "bold"}
+          ]
+        },
+        "content": {
+          "height_percent": 45,
+          "background": "#FFFFFF",
+          "layout": "flexible",
+          "elements": [
+            {"type": "message", "color": "#013C87", "size": "32pt"},
+            {"type": "sections", "color": "#FFFFFF", "background": "#013C87"}
+          ]
+        },
+        "footer": {
+          "height_percent": 25,
+          "background": "#FFFFFF",
+          "elements": [
+            {"type": "cta_button", "background": "#1D7742", "text": "#FFFFFF"}
+          ]
+        }
+      }
+    }
+  },
+
+  "quality_rules": {
+    "color_accuracy": {
+      "requirement": "EXACT hex codes only",
+      "primary_blue": "#013C87",
+      "primary_green": "#1D7742",
+      "verification": "Must verify in image analysis"
+    },
+    "logo_presence": {
+      "requirement": "Must include logo if brief says 'include branding'",
+      "position": "top-left or specified",
+      "minimum_size": "5% of image",
+      "exact_preservation": true
+    },
+    "text_rendering": {
+      "requirement": "All text must be readable",
+      "minimum_contrast": 4.5,
+      "forbidden": ["unreadable_text", "overlapped_text", "low_contrast"]
+    },
+    "composition": {
+      "requirement": "Professional and balanced",
+      "focal_point": "clear_and_centered",
+      "spacing": "generous_white_space",
+      "cluttering": "forbidden"
+    }
+  },
+
+  "generation_prohibitions": [
+    "Do NOT recreate official logo from memory - always use exact SVG",
+    "Do NOT use approximate colors - must be exact hex codes",
+    "Do NOT claim fake execution - if not generated, say so explicitly",
+    "Do NOT add unrelated branding or logos",
+    "Do NOT use decorative African stereotypes or clichés",
+    "Do NOT create cluttered or overloaded designs",
+    "Do NOT render text that is illegible",
+    "Do NOT modify brand asset colors arbitrarily",
+    "Do NOT use multiple competing CTAs",
+    "Do NOT ignore spacing and hierarchy principles"
+  ],
+
+  "generation_examples": {
+    "cybersecurity_flyer": {
+      "type": "Formation Flyer",
+      "request": {
+        "subject": "Young African digital entrepreneur",
+        "context": "cybersecurity training program",
+        "primary_message": "Protégez votre business digital",
+        "program_modules": ["Fondamentaux", "Menaces", "Défense", "Réponse"],
+        "dates": "20 OCT - 10 NOV 2026",
+        "cta": "Inscrivez-vous maintenant",
+        "branding": {
+          "logo": "logo_primary",
+          "colors": ["#013C87", "#1D7742"],
+          "style": "corporate_premium"
+        }
+      },
+      "expected_outcome": {
+        "logo_position": "top-left",
+        "logo_size": "15%",
+        "primary_color": "#013C87",
+        "secondary_color": "#1D7742",
+        "cta_button_color": "#1D7742",
+        "text_color_on_blue": "#FFFFFF",
+        "professional_african_subject": true,
+        "module_icons_present": true
+      }
+    }
+  },
+
+  "metadata": {
+    "total_assets": 88,
+    "categories": {
+      "logos": 6,
+      "symbols": 8,
+      "patterns": 5,
+      "grids": 6,
+      "references_flyers": 11,
+      "references_posters": 6,
+      "references_social": 4,
+      "team_photos": 4,
+      "other": 32
+    },
+    "last_updated": "2026-09-29",
+    "version": "1.0",
+    "status": "production_ready"
+  }
+}

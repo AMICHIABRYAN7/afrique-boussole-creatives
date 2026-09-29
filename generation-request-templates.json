@@ -1,0 +1,482 @@
+{
+  "schema_version": "1.0",
+  "title": "Afrique Boussole - 5 Generation Request Templates",
+  "description": "Ready-to-use templates for generating on-brand marketing visuals via Gemini/Claude APIs",
+  "generated": "2026-09-29",
+  "total_templates": 5,
+
+  "templates": [
+    {
+      "template_id": "template_flyer_formation",
+      "name": "Formation/Training Flyer",
+      "description": "Professional flyer for announcing training programs and courses",
+      "content_type": "flyer",
+      "language": "fr",
+      "dimensions": {
+        "width": 1080,
+        "height": 1440,
+        "unit": "px",
+        "aspect_ratio": "A4"
+      },
+      "brand_elements": {
+        "include_logo": true,
+        "logo_asset_id": { 
+          "id": "logo_primary_light",
+          "position": "top-left",
+          "size_percent": 15
+        },
+        "primary_color": "#013C87",
+        "secondary_color": "#1D7742",
+        "brand_symbols": [
+          { "id": "compass_icon_simple", "position": "top-right", "size_percent": 12, "opacity": 0.3 }
+        ],
+        "company_tagline": "STRATÉGIE • INNOVATION • DATA",
+        "style": "corporate"
+      },
+      "layout": {
+        "template": "header_content_footer",
+        "sections": [
+          {
+            "name": "header",
+            "height_percent": 25,
+            "background_color": "#013C87",
+            "content_type": "mixed"
+          },
+          {
+            "name": "content",
+            "height_percent": 50,
+            "background_color": "#FFFFFF",
+            "content_type": "mixed"
+          },
+          {
+            "name": "footer",
+            "height_percent": 25,
+            "background_color": "#F7F4EC",
+            "content_type": "cta"
+          }
+        ]
+      },
+      "content": {
+        "headline": {
+          "text": "Formation: [PROGRAM_NAME]",
+          "size_pt": 48,
+          "weight": "bold",
+          "color": "#FFFFFF",
+          "alignment": "center"
+        },
+        "subheadline": {
+          "text": "[SUBTITLE_OR_TAGLINE]",
+          "size_pt": 28,
+          "color": "#1D7742"
+        },
+        "body_text": [
+          {
+            "text": "Programme complet couvrant les fondamentaux et les meilleures pratiques",
+            "size_pt": 16,
+            "color": "#333333"
+          },
+          {
+            "text": "📅 Dates: [START_DATE] - [END_DATE]\n⏰ Horaires: [TIME_RANGE]\n📍 Lieu: [LOCATION]",
+            "size_pt": 14,
+            "color": "#013C87"
+          }
+        ],
+        "cta_button": {
+          "text": "Inscrivez-vous maintenant",
+          "background_color": "#1D7742",
+          "text_color": "#FFFFFF",
+          "prominence": "bold"
+        }
+      },
+      "quality_requirements": {
+        "color_accuracy": true,
+        "minimum_contrast_ratio": 4.5,
+        "professionalism_level": "professional",
+        "avoid_cliches": true,
+        "african_context_appropriate": true
+      },
+      "metadata": {
+        "project_name": "Training Programs",
+        "target_audience": "Entrepreneurs africains, professionnels du digital",
+        "context": "Formation professionnelle en cybersécurité, leadership, ou technologie",
+        "reference_assets": ["ref_flyer_consulting", "ref_flyer_corporate_template"]
+      },
+      "generation_instructions": "Create a professional, modern flyer layout with clear hierarchy. Use corporate blue for headers, green accents for CTAs. Ensure all text is highly readable. Leave generous whitespace around content. The design should convey professionalism and trust."
+    },
+
+    {
+      "template_id": "template_social_media_post",
+      "name": "Social Media Post (Square Format)",
+      "description": "Instagram/LinkedIn-optimized social media announcement post",
+      "content_type": "social_media",
+      "language": "fr",
+      "dimensions": {
+        "width": 1080,
+        "height": 1080,
+        "unit": "px",
+        "aspect_ratio": "1:1"
+      },
+      "brand_elements": {
+        "include_logo": true,
+        "logo_asset_id": {
+          "id": "emblem_primary",
+          "position": "bottom-right",
+          "size_percent": 10,
+          "opacity": 0.8
+        },
+        "primary_color": "#013C87",
+        "secondary_color": "#1D7742",
+        "brand_symbols": [
+          { "id": "direction_arrow", "position": "center", "size_percent": 20, "opacity": 0.15 }
+        ],
+        "company_tagline": "STRATÉGIE • INNOVATION • DATA",
+        "style": "modern"
+      },
+      "layout": {
+        "template": "centered",
+        "sections": [
+          {
+            "name": "background",
+            "height_percent": 100,
+            "background_color": "#013C87",
+            "content_type": "mixed"
+          }
+        ]
+      },
+      "content": {
+        "headline": {
+          "text": "[ANNOUNCEMENT_HEADLINE]",
+          "size_pt": 44,
+          "weight": "bold",
+          "color": "#FFFFFF",
+          "alignment": "center"
+        },
+        "subheadline": {
+          "text": "[KEY_MESSAGE]",
+          "size_pt": 24,
+          "color": "#1D7742"
+        },
+        "body_text": [
+          {
+            "text": "[DESCRIPTION_LINE_1]\n[DESCRIPTION_LINE_2]",
+            "size_pt": 18,
+            "color": "#F7F4EC"
+          }
+        ],
+        "cta_button": {
+          "text": "📍 Discover More",
+          "background_color": "#1D7742",
+          "text_color": "#FFFFFF",
+          "prominence": "medium"
+        }
+      },
+      "quality_requirements": {
+        "color_accuracy": true,
+        "minimum_contrast_ratio": 4.5,
+        "professionalism_level": "professional",
+        "avoid_cliches": true,
+        "african_context_appropriate": true
+      },
+      "metadata": {
+        "project_name": "Social Media Campaign",
+        "campaign": "LinkedIn / Instagram",
+        "target_audience": "Professionals, entrepreneurs, business leaders",
+        "context": "Announcement of new services, events, or thought leadership content",
+        "reference_assets": ["ref_social_essence_academy", "ref_social_countdown"]
+      },
+      "generation_instructions": "Design a visually striking 1:1 square post optimized for Instagram and LinkedIn. Use bold typography with excellent contrast. Incorporate the compass symbol subtly as background decoration. Keep focal point centered. Make sure text is readable even at mobile sizes."
+    },
+
+    {
+      "template_id": "template_poster_event",
+      "name": "Event Poster (Vertical)",
+      "description": "Promotional poster for conferences, webinars, or public events",
+      "content_type": "poster",
+      "language": "fr",
+      "dimensions": {
+        "width": 720,
+        "height": 1080,
+        "unit": "px",
+        "aspect_ratio": "2:3"
+      },
+      "brand_elements": {
+        "include_logo": true,
+        "logo_asset_id": {
+          "id": "emblem_primary",
+          "position": "top-center",
+          "size_percent": 18
+        },
+        "primary_color": "#013C87",
+        "secondary_color": "#1D7742",
+        "brand_symbols": [
+          { "id": "location_pin", "position": "bottom-left", "size_percent": 15, "opacity": 0.6 }
+        ],
+        "style": "bold"
+      },
+      "layout": {
+        "template": "hero",
+        "sections": [
+          {
+            "name": "hero",
+            "height_percent": 40,
+            "background_color": "#1D7742",
+            "content_type": "image"
+          },
+          {
+            "name": "details",
+            "height_percent": 50,
+            "background_color": "#FFFFFF",
+            "content_type": "text"
+          },
+          {
+            "name": "cta_bar",
+            "height_percent": 10,
+            "background_color": "#013C87",
+            "content_type": "cta"
+          }
+        ]
+      },
+      "content": {
+        "headline": {
+          "text": "[EVENT_TITLE]",
+          "size_pt": 52,
+          "weight": "extra_bold",
+          "color": "#FFFFFF",
+          "alignment": "center"
+        },
+        "subheadline": {
+          "text": "[EVENT_CATEGORY]",
+          "size_pt": 26,
+          "color": "#F7F4EC"
+        },
+        "body_text": [
+          {
+            "text": "🗓️ [DATE]\n⏰ [TIME]\n📍 [LOCATION]",
+            "size_pt": 18,
+            "color": "#013C87"
+          },
+          {
+            "text": "[DESCRIPTION]\n[KEY_HIGHLIGHTS]",
+            "size_pt": 14,
+            "color": "#333333"
+          }
+        ],
+        "cta_button": {
+          "text": "Reserve Your Spot",
+          "background_color": "#1D7742",
+          "text_color": "#FFFFFF",
+          "prominence": "bold"
+        }
+      },
+      "quality_requirements": {
+        "color_accuracy": true,
+        "minimum_contrast_ratio": 4.5,
+        "professionalism_level": "professional",
+        "avoid_cliches": true,
+        "african_context_appropriate": true
+      },
+      "metadata": {
+        "project_name": "Event Marketing",
+        "campaign": "Conferences & Webinars",
+        "target_audience": "Professionals attending events",
+        "context": "Annual conference, webinar series, or public event promotion",
+        "reference_assets": ["ref_poster_tedx", "ref_poster_sunday_service"]
+      },
+      "generation_instructions": "Create an eye-catching vertical poster with strong visual hierarchy. Use the hero section for impact (could be a compass, African map, or strategic imagery). Organize event details clearly in the middle. Ensure typography scales well from distance. Bottom CTA should be actionable and prominent."
+    },
+
+    {
+      "template_id": "template_branding_guideline",
+      "name": "Brand Identity / Guideline Card",
+      "description": "Visual brand guideline card showing colors, logo, and brand values",
+      "content_type": "branding",
+      "language": "en",
+      "dimensions": {
+        "width": 1200,
+        "height": 800,
+        "unit": "px",
+        "aspect_ratio": "3:2"
+      },
+      "brand_elements": {
+        "include_logo": true,
+        "logo_asset_id": {
+          "id": "logo_primary_light",
+          "position": "top-left",
+          "size_percent": 20
+        },
+        "primary_color": "#013C87",
+        "secondary_color": "#1D7742",
+        "brand_symbols": [
+          { "id": "compass_icon_detailed", "position": "center", "size_percent": 25, "opacity": 0.1 }
+        ],
+        "company_tagline": "STRATÉGIE • INNOVATION • DATA",
+        "style": "minimalist"
+      },
+      "layout": {
+        "template": "grid",
+        "sections": [
+          {
+            "name": "left_panel",
+            "height_percent": 100,
+            "background_color": "#FFFFFF",
+            "content_type": "mixed"
+          },
+          {
+            "name": "right_panel",
+            "height_percent": 100,
+            "background_color": "#F7F4EC",
+            "content_type": "mixed"
+          }
+        ]
+      },
+      "content": {
+        "headline": {
+          "text": "AFRIQUE BOUSSOLE",
+          "size_pt": 56,
+          "weight": "bold",
+          "color": "#013C87",
+          "alignment": "left"
+        },
+        "subheadline": {
+          "text": "Brand Identity Guidelines",
+          "size_pt": 28,
+          "color": "#1D7742"
+        },
+        "body_text": [
+          {
+            "text": "Color Palette:\n🔵 Primary Blue: #013C87\n🟢 Action Green: #1D7742\n⚪ White: #FFFFFF\n🟤 Ivory: #F7F4EC",
+            "size_pt": 14,
+            "color": "#333333"
+          },
+          {
+            "text": "Core Values:\n✓ Strategic\n✓ Innovative\n✓ Data-Driven\n✓ Professional",
+            "size_pt": 14,
+            "color": "#013C87"
+          }
+        ]
+      },
+      "quality_requirements": {
+        "color_accuracy": true,
+        "minimum_contrast_ratio": 4.5,
+        "professionalism_level": "premium",
+        "avoid_cliches": true,
+        "african_context_appropriate": false
+      },
+      "metadata": {
+        "project_name": "Brand Assets",
+        "campaign": "Brand System",
+        "target_audience": "Internal team, partners, vendors",
+        "context": "Brand guideline and identity system documentation",
+        "reference_assets": []
+      },
+      "generation_instructions": "Design a clean, professional brand guideline card. Split into two panels showing logo on left, color palette and values on right. Use generous spacing. Typography should be elegant and readable. This is for internal use to maintain brand consistency."
+    },
+
+    {
+      "template_id": "template_marketing_banner",
+      "name": "Marketing Banner / Web Header",
+      "description": "Website header banner for campaigns and hero sections",
+      "content_type": "marketing",
+      "language": "en",
+      "dimensions": {
+        "width": 1920,
+        "height": 400,
+        "unit": "px",
+        "aspect_ratio": "16:3.3"
+      },
+      "brand_elements": {
+        "include_logo": true,
+        "logo_asset_id": {
+          "id": "logo_primary_light",
+          "position": "top-left",
+          "size_percent": 12
+        },
+        "primary_color": "#013C87",
+        "secondary_color": "#1D7742",
+        "brand_symbols": [
+          { "id": "arrow_direction", "position": "top-right", "size_percent": 30, "opacity": 0.15 }
+        ],
+        "style": "modern"
+      },
+      "layout": {
+        "template": "asymmetric",
+        "sections": [
+          {
+            "name": "left_content",
+            "height_percent": 100,
+            "background_color": "#013C87",
+            "content_type": "text"
+          },
+          {
+            "name": "right_visual",
+            "height_percent": 100,
+            "background_color": "#1D7742",
+            "content_type": "image"
+          }
+        ]
+      },
+      "content": {
+        "headline": {
+          "text": "[CAMPAIGN_HEADLINE]",
+          "size_pt": 54,
+          "weight": "bold",
+          "color": "#FFFFFF",
+          "alignment": "left"
+        },
+        "subheadline": {
+          "text": "[CAMPAIGN_SUBTEXT]",
+          "size_pt": 24,
+          "color": "#F7F4EC"
+        },
+        "body_text": [
+          {
+            "text": "[CALL_TO_ACTION_TEXT]",
+            "size_pt": 16,
+            "color": "#FFFFFF"
+          }
+        ],
+        "cta_button": {
+          "text": "Learn More →",
+          "background_color": "#FFFFFF",
+          "text_color": "#013C87",
+          "prominence": "bold"
+        }
+      },
+      "quality_requirements": {
+        "color_accuracy": true,
+        "minimum_contrast_ratio": 4.5,
+        "professionalism_level": "professional",
+        "avoid_cliches": true,
+        "african_context_appropriate": true
+      },
+      "metadata": {
+        "project_name": "Web & Digital",
+        "campaign": "Website Headers",
+        "target_audience": "Website visitors, potential clients",
+        "context": "Homepage hero section or campaign landing page",
+        "reference_assets": ["ref_flyer_creative_agency", "ref_flyer_digital_marketing"]
+      },
+      "generation_instructions": "Create a striking, modern web banner with asymmetric layout. Left side should contain compelling headline and CTA. Right side features visual element (could incorporate arrow symbol or compass). Use bold colors with strong contrast. Design should be attention-grabbing yet professional."
+    }
+  ],
+
+  "usage_instructions": {
+    "step_1": "Select a template that matches your content type",
+    "step_2": "Copy the template JSON and replace placeholder values [LIKE_THIS]",
+    "step_3": "Ensure all required brand colors use exact hex codes",
+    "step_4": "Provide the modified template to Gemini/Claude API with generation_instructions",
+    "step_5": "Validate output against quality_requirements",
+    "notes": [
+      "All colors must be exact hex codes (#013C87, #1D7742)",
+      "Logo placement and sizing must be respected",
+      "Text must always be readable with minimum 4.5 contrast ratio",
+      "Reference assets from assets-complete-catalog.json for style inspiration"
+    ]
+  },
+
+  "metadata": {
+    "created": "2026-09-29",
+    "version": "1.0",
+    "status": "production_ready"
+  }
+}

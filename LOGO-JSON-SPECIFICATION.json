@@ -1,0 +1,221 @@
+{
+  "logo_name": "Afrique Boussole Groupe",
+  "version": "1.0",
+  "status": "official",
+  "description": "Logo officiel composé d'une carte d'Afrique avec réseau de points, compass icon, et wordmark",
+  
+  "components": {
+    "africa_map": {
+      "type": "geographic_shape",
+      "position": "left",
+      "color": "#013C87",
+      "description": "Silhouette du continent africain",
+      "details": {
+        "style": "solid_fill",
+        "outline": "white_country_borders",
+        "network_overlay": {
+          "type": "connected_dots",
+          "color": "#FFFFFF",
+          "description": "Points blancs reliés par des lignes représentant un réseau de connexions à travers le continent",
+          "pattern": "multiple_dots_connected_by_lines"
+        }
+      },
+      "dimensions": {
+        "width_percent": 35,
+        "height_percent": 100,
+        "aspect_ratio": "preserve_africa_shape"
+      }
+    },
+    
+    "compass_icon": {
+      "type": "symbol",
+      "position": "center_between_map_and_text",
+      "colors": {
+        "outer_circle": "#1D7742",
+        "letter_g": "#FFFFFF",
+        "background": "#1D7742"
+      },
+      "description": "Circular compass icon with green background and white letter 'G' in center",
+      "details": {
+        "shape": "circle",
+        "size_percent": 15,
+        "letter": "G",
+        "letter_style": "bold_uppercase",
+        "border": "green_circle",
+        "symbolism": "compass/navigation/guidance"
+      },
+      "positioning": {
+        "alignment": "vertical_center",
+        "x_position": "overlap_right_edge_of_africa_map",
+        "z_index": "on_top_of_map"
+      }
+    },
+    
+    "wordmark": {
+      "type": "text",
+      "position": "right_of_compass",
+      "layout": "stacked_three_lines",
+      
+      "line_1": {
+        "text": "AFRIQUE",
+        "color": "#1D7742",
+        "font_weight": "extra_bold",
+        "font_size": "large",
+        "letter_spacing": "normal",
+        "style": "uppercase",
+        "alignment": "left"
+      },
+      
+      "line_2": {
+        "text": "BOUSSOLE",
+        "color": "#013C87",
+        "font_weight": "extra_bold",
+        "font_size": "large",
+        "letter_spacing": "normal",
+        "style": "uppercase",
+        "alignment": "left"
+      },
+      
+      "line_3": {
+        "components": [
+          {
+            "type": "horizontal_line",
+            "color": "#013C87",
+            "thickness": "2px",
+            "width": "20%",
+            "position": "left"
+          },
+          {
+            "type": "text",
+            "text": "GROUPE",
+            "color": "#013C87",
+            "font_weight": "bold",
+            "font_size": "small",
+            "letter_spacing": "wide",
+            "style": "uppercase",
+            "position": "right_of_line"
+          },
+          {
+            "type": "horizontal_line",
+            "color": "#013C87",
+            "thickness": "2px",
+            "width": "20%",
+            "position": "right"
+          }
+        ],
+        "alignment": "center",
+        "description": "Word 'GROUPE' flanked by horizontal lines on both sides"
+      }
+    }
+  },
+  
+  "layout": {
+    "structure": "horizontal_three_part",
+    "parts": [
+      {
+        "section": "left",
+        "content": "africa_map_with_network",
+        "width_percent": 35
+      },
+      {
+        "section": "center",
+        "content": "compass_icon_g",
+        "width_percent": 15
+      },
+      {
+        "section": "right",
+        "content": "wordmark_stacked",
+        "width_percent": 50
+      }
+    ],
+    "alignment": "vertical_center",
+    "spacing": "tight_overlap_between_map_and_compass"
+  },
+  
+  "colors": {
+    "primary_blue": {
+      "hex": "#013C87",
+      "rgb": "1, 60, 135",
+      "usage": ["africa_map_fill", "BOUSSOLE_text", "GROUPE_text", "lines"]
+    },
+    "primary_green": {
+      "hex": "#1D7742",
+      "rgb": "29, 119, 66",
+      "usage": ["compass_circle", "AFRIQUE_text"]
+    },
+    "white": {
+      "hex": "#FFFFFF",
+      "rgb": "255, 255, 255",
+      "usage": ["network_dots_lines", "letter_G", "country_borders"]
+    }
+  },
+  
+  "dimensions": {
+    "aspect_ratio": "approximately_16:5",
+    "recommended_width": "800px",
+    "recommended_height": "250px",
+    "minimum_width": "300px",
+    "scalable": "vector_based"
+  },
+  
+  "usage_instructions": {
+    "reproduction_steps": [
+      "1. Draw Africa continent silhouette filled with blue #013C87",
+      "2. Overlay white network pattern (dots + connecting lines) on the map",
+      "3. Add white borders showing country boundaries within Africa",
+      "4. Place green circular compass icon (#1D7742) overlapping right edge of map",
+      "5. Center white letter 'G' in bold inside the green compass circle",
+      "6. To the right, stack text in 3 lines:",
+      "   - Line 1: 'AFRIQUE' in green #1D7742, extra bold, large",
+      "   - Line 2: 'BOUSSOLE' in blue #013C87, extra bold, large",
+      "   - Line 3: Blue horizontal line + 'GROUPE' (blue, bold, smaller, wide spacing) + blue horizontal line",
+      "7. Align all elements vertically centered",
+      "8. Ensure compass icon slightly overlaps map for cohesive look"
+    ],
+    
+    "critical_requirements": [
+      "EXACT colors: #013C87 (blue) and #1D7742 (green) - NO approximations",
+      "Africa map must show network connectivity pattern (dots + lines)",
+      "Compass icon MUST have letter 'G' centered in white",
+      "Text layout: AFRIQUE (green) above BOUSSOLE (blue) above GROUPE (blue with lines)",
+      "Maintain proportions: Map 35% / Compass 15% / Text 50%",
+      "White network overlay on Africa is essential design element"
+    ],
+    
+    "forbidden_modifications": [
+      "Do NOT change colors (blue, green, white only)",
+      "Do NOT remove network pattern from Africa",
+      "Do NOT change letter 'G' in compass",
+      "Do NOT rearrange word order (AFRIQUE first, BOUSSOLE second, GROUPE third)",
+      "Do NOT simplify or omit any element"
+    ]
+  },
+  
+  "brand_meaning": {
+    "africa_map_with_network": "Represents continental reach and interconnected business networks across Africa",
+    "compass_with_g": "Symbolizes guidance, navigation, and strategic direction (Boussole = Compass in French)",
+    "letter_g": "Stands for 'Groupe' and guidance/navigation",
+    "color_blue": "Professionalism, trust, corporate stability",
+    "color_green": "Growth, innovation, action, progress"
+  },
+  
+  "file_references": {
+    "original_file": "assets/brand/logos/afrique-boussole-logo.svg",
+    "png_export": "assets/brand/logos/logo.png",
+    "dark_variant": "assets/brand/logos/afrique-boussole-logo-dark.svg",
+    "emblem_only": "assets/brand/logos/afrique-boussole-emblem.svg"
+  },
+  
+  "generation_prompt_template": "Create the Afrique Boussole Groupe logo with these EXACT specifications:\n\n1. LEFT SECTION (35%):\n   - Africa continent silhouette in solid blue #013C87\n   - White network overlay: multiple dots connected by lines representing connectivity across the continent\n   - White country borders visible within the map\n\n2. CENTER SECTION (15%):\n   - Green circular compass icon #1D7742\n   - White bold letter 'G' centered inside the circle\n   - Position: overlapping the right edge of the Africa map\n\n3. RIGHT SECTION (50%):\n   - Line 1: 'AFRIQUE' in green #1D7742 (extra bold, large, uppercase)\n   - Line 2: 'BOUSSOLE' in blue #013C87 (extra bold, large, uppercase)\n   - Line 3: [blue line] 'GROUPE' [blue line] in blue #013C87 (bold, smaller, wide letter spacing, uppercase)\n\n4. LAYOUT:\n   - All elements vertically centered\n   - Horizontal composition: Map + Compass (slight overlap) + Text\n   - Professional, balanced, clean design\n\nCRITICAL: Use EXACT colors #013C87 and #1D7742. The network pattern on Africa and the 'G' in compass are mandatory elements.",
+  
+  "validation_checklist": [
+    "✓ Africa map present in blue #013C87",
+    "✓ White network pattern (dots + lines) visible on map",
+    "✓ Green compass circle #1D7742 with white 'G'",
+    "✓ AFRIQUE in green above BOUSSOLE in blue",
+    "✓ GROUPE with flanking lines at bottom",
+    "✓ Colors are EXACT (no approximations)",
+    "✓ All three sections present and aligned",
+    "✓ Professional and balanced appearance"
+  ]
+}

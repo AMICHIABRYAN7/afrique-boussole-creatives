@@ -1,0 +1,212 @@
+{
+  "schema_version": "1.0",
+  "name": "Afrique Boussole Generation Request Schema",
+  "description": "JSON schema for structured image generation requests to Gemini/Claude APIs",
+  "use_case": "Deterministic generation of on-brand marketing visuals",
+
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  
+  "definitions": {
+    "color": {
+      "type": "object",
+      "required": ["hex"],
+      "properties": {
+        "hex": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+        "usage": { "type": "string" }
+      }
+    },
+    "asset_reference": {
+      "type": "object",
+      "required": ["id"],
+      "properties": {
+        "id": { "type": "string", "description": "Asset ID from assets-complete-catalog.json" },
+        "size_percent": { "type": "integer", "minimum": 1, "maximum": 100 },
+        "position": { "enum": ["top-left", "top-center", "top-right", "center", "bottom-left", "bottom-center", "bottom-right"] },
+        "opacity": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    }
+  },
+
+  "type": "object",
+  "required": ["request_id", "content_type", "brand_elements", "dimensions"],
+  
+  "properties": {
+    "request_id": {
+      "type": "string",
+      "description": "Unique identifier for this generation request",
+      "pattern": "^[a-z0-9_-]{5,50}$"
+    },
+    "content_type": {
+      "type": "string",
+      "enum": ["flyer", "social_media", "poster", "branding", "marketing", "email_header", "banner", "presentation"],
+      "description": "Type of visual content to generate"
+    },
+    "language": {
+      "type": "string",
+      "enum": ["fr", "en"],
+      "default": "fr",
+      "description": "Content language (French or English)"
+    },
+    "dimensions": {
+      "type": "object",
+      "required": ["width", "height", "unit"],
+      "properties": {
+        "width": { "type": "integer", "minimum": 100 },
+        "height": { "type": "integer", "minimum": 100 },
+        "unit": { "enum": ["px", "mm", "inches"] },
+        "aspect_ratio": { "type": "string", "description": "Optional aspect ratio (e.g., '16:9', 'A4')" }
+      }
+    },
+    "brand_elements": {
+      "type": "object",
+      "properties": {
+        "include_logo": { "type": "boolean", "default": true },
+        "logo_asset_id": { "$ref": "#/definitions/asset_reference" },
+        "primary_color": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$", "default": "#013C87" },
+        "secondary_color": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$", "default": "#1D7742" },
+        "brand_symbols": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/asset_reference" },
+          "description": "Additional brand symbols or decorative elements"
+        },
+        "company_tagline": { "type": "string" },
+        "style": { "enum": ["corporate", "modern", "minimalist", "bold", "professional"], "default": "corporate" }
+      }
+    },
+    "layout": {
+      "type": "object",
+      "properties": {
+        "template": { "enum": ["header_content_footer", "centered", "asymmetric", "grid", "hero"] },
+        "sections": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "height_percent": { "type": "number", "minimum": 5, "maximum": 100 },
+              "background_color": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+              "content_type": { "enum": ["text", "image", "mixed", "cta"] }
+            }
+          }
+        }
+      }
+    },
+    "content": {
+      "type": "object",
+      "properties": {
+        "headline": {
+          "type": "object",
+          "properties": {
+            "text": { "type": "string" },
+            "size_pt": { "type": "integer", "minimum": 12, "maximum": 120 },
+            "weight": { "enum": ["light", "normal", "bold", "extra_bold"], "default": "bold" },
+            "color": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+            "alignment": { "enum": ["left", "center", "right"] }
+          }
+        },
+        "subheadline": {
+          "type": "object",
+          "properties": {
+            "text": { "type": "string" },
+            "size_pt": { "type": "integer", "minimum": 10, "maximum": 48 },
+            "color": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" }
+          }
+        },
+        "body_text": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "text": { "type": "string" },
+              "size_pt": { "type": "integer", "minimum": 8, "maximum": 32 },
+              "color": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" }
+            }
+          }
+        },
+        "cta_button": {
+          "type": "object",
+          "properties": {
+            "text": { "type": "string" },
+            "background_color": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$", "default": "#1D7742" },
+            "text_color": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$", "default": "#FFFFFF" },
+            "prominence": { "enum": ["subtle", "medium", "bold"], "default": "bold" }
+          }
+        },
+        "images": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "asset_id": { "type": "string", "description": "Reference from assets-complete-catalog.json" },
+              "position": { "type": "string" },
+              "size_percent": { "type": "integer" }
+            }
+          }
+        }
+      }
+    },
+    "quality_requirements": {
+      "type": "object",
+      "properties": {
+        "color_accuracy": { "type": "boolean", "default": true, "description": "Enforce EXACT hex colors" },
+        "minimum_contrast_ratio": { "type": "number", "default": 4.5 },
+        "professionalism_level": { "enum": ["basic", "intermediate", "professional", "premium"], "default": "professional" },
+        "avoid_cliches": { "type": "boolean", "default": true },
+        "african_context_appropriate": { "type": "boolean", "default": true }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project_name": { "type": "string" },
+        "campaign": { "type": "string" },
+        "target_audience": { "type": "string" },
+        "context": { "type": "string", "description": "Additional context for generation" },
+        "reference_assets": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Asset IDs to reference for style/inspiration"
+        }
+      }
+    },
+    "generation_instructions": {
+      "type": "string",
+      "description": "Additional free-form instructions for the AI model"
+    }
+  },
+
+  "examples": [
+    {
+      "request_id": "flyer_cybersecurity_2026_10",
+      "content_type": "flyer",
+      "language": "fr",
+      "dimensions": {
+        "width": 1080,
+        "height": 1440,
+        "unit": "px",
+        "aspect_ratio": "A4"
+      },
+      "brand_elements": {
+        "include_logo": true,
+        "logo_asset_id": { "id": "logo_primary_light", "position": "top-left", "size_percent": 15 },
+        "primary_color": "#013C87",
+        "secondary_color": "#1D7742",
+        "style": "corporate"
+      },
+      "content": {
+        "headline": {
+          "text": "Protégez votre Business Digital",
+          "size_pt": 54,
+          "weight": "bold",
+          "color": "#FFFFFF",
+          "alignment": "center"
+        },
+        "cta_button": {
+          "text": "Inscrivez-vous maintenant",
+          "background_color": "#1D7742",
+          "text_color": "#FFFFFF"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,868 @@
+{
+  "schema_version": "2.0",
+  "catalog_name": "Afrique Boussole - Complete Assets Catalog (JSON)",
+  "description": "Full inventory of all 88 brand assets converted to JSON for deterministic AI image generation via Gemini/Claude",
+  "generated": "2026-09-29T14:30:00Z",
+  "total_assets": 88,
+  "use_case": "Structured generation requests for Gemini Pro / Claude Vision with exact brand compliance",
+  
+  "brand_core": {
+    "company": "AFRIQUE BOUSSOLE",
+    "tagline": "STRATÉGIE • INNOVATION • DATA",
+    "mission": "Strategic consulting and innovation for African enterprises",
+    "brand_colors": {
+      "primary_blue": { "hex": "#013C87", "rgb": "rgb(1, 60, 135)", "name": "Corporate Blue" },
+      "primary_green": { "hex": "#1D7742", "rgb": "rgb(29, 119, 66)", "name": "Action Green" },
+      "white": { "hex": "#FFFFFF", "rgb": "rgb(255, 255, 255)", "name": "White" },
+      "ivory": { "hex": "#F7F4EC", "rgb": "rgb(247, 244, 236)", "name": "Ivory" }
+    }
+  },
+
+  "assets": {
+    "logos": [
+      {
+        "id": "logo_primary_light",
+        "name": "Afrique Boussole Primary Logo (Light)",
+        "path": "assets/brand/logos/afrique-boussole-logo.svg",
+        "type": "svg",
+        "category": "brand_logo",
+        "priority": 10,
+        "description": "Official full logo with compass and wordmark",
+        "colors": ["#013C87", "#1D7742"],
+        "usage_contexts": ["header", "hero", "watermark", "branding"],
+        "generation_rules": ["MUST use exact SVG", "PRESERVE colors exactly", "NO recreation from memory"],
+        "optimal_sizes": { "min_percent": 5, "max_percent": 25, "recommended_percent": 15 }
+      },
+      {
+        "id": "logo_dark",
+        "name": "Afrique Boussole Logo (Dark Variant)",
+        "path": "assets/brand/logos/afrique-boussole-logo-dark.svg",
+        "type": "svg",
+        "category": "brand_logo",
+        "priority": 9,
+        "description": "Dark variant for light backgrounds",
+        "colors": ["#013C87", "#1D7742"],
+        "usage_contexts": ["light_background", "branding_variant"],
+        "generation_rules": ["Use on light/white backgrounds only"]
+      },
+      {
+        "id": "emblem_primary",
+        "name": "Afrique Boussole Emblem (Compass Mark)",
+        "path": "assets/brand/logos/afrique-boussole-emblem.svg",
+        "type": "svg",
+        "category": "brand_emblem",
+        "priority": 9,
+        "description": "Compass-only icon for compact placements",
+        "colors": ["#013C87"],
+        "usage_contexts": ["icon", "favicon", "small_placement", "watermark"]
+      },
+      {
+        "id": "emblem_dark",
+        "name": "Afrique Boussole Emblem (Dark)",
+        "path": "assets/brand/logos/afrique-boussole-emblem-dark.svg",
+        "type": "svg",
+        "category": "brand_emblem",
+        "priority": 8,
+        "description": "Dark emblem variant",
+        "colors": ["#000000", "#1D7742"],
+        "usage_contexts": ["dark_background", "contrast"]
+      },
+      {
+        "id": "logo_raster",
+        "name": "Logo (PNG Raster)",
+        "path": "assets/brand/logos/logo.png",
+        "type": "png",
+        "category": "brand_logo",
+        "priority": 8,
+        "dimensions": "1024x1024px",
+        "usage_contexts": ["web", "social_media", "quick_export"]
+      },
+      {
+        "id": "logo_svg_uppercase",
+        "name": "Logo (SVG - Uppercase)",
+        "path": "assets/brand/logos/LOGO.svg",
+        "type": "svg",
+        "category": "brand_logo",
+        "priority": 7,
+        "description": "Alternative SVG logo variant",
+        "usage_contexts": ["display", "branding"]
+      }
+    ],
+
+    "symbols": [
+      {
+        "id": "compass_icon_simple",
+        "name": "Compass Icon - Simple",
+        "path": "assets/brand/symbols/compass-icon-simple.svg",
+        "type": "svg",
+        "category": "symbol",
+        "priority": 7,
+        "colors": ["#013C87", "#1D7742"],
+        "usage_contexts": ["background_decoration", "layout_accent", "UI_element"],
+        "description": "Minimalist compass for subtle brand presence"
+      },
+      {
+        "id": "compass_icon_detailed",
+        "name": "Compass Icon - Detailed",
+        "path": "assets/brand/symbols/compass-icon-detailed.svg",
+        "type": "svg",
+        "category": "symbol",
+        "priority": 8,
+        "colors": ["#013C87"],
+        "usage_contexts": ["hero_element", "focal_point", "prominent"],
+        "description": "Detailed compass for focal point placements"
+      },
+      {
+        "id": "compass_needle",
+        "name": "Compass Needle",
+        "path": "assets/brand/symbols/compass-needle.svg",
+        "type": "svg",
+        "category": "symbol",
+        "priority": 6,
+        "colors": ["#1D7742"],
+        "usage_contexts": ["directional_accent", "animation_element"]
+      },
+      {
+        "id": "coordinate_cross",
+        "name": "Coordinate Cross",
+        "path": "assets/brand/symbols/coordinate-cross.svg",
+        "type": "svg",
+        "category": "symbol",
+        "priority": 6,
+        "colors": ["#013C87"],
+        "usage_contexts": ["positioning_reference", "grid_element"]
+      },
+      {
+        "id": "direction_arrow",
+        "name": "Direction Arrow",
+        "path": "assets/brand/symbols/direction-arrow.svg",
+        "type": "svg",
+        "category": "symbol",
+        "priority": 7,
+        "colors": ["#1D7742"],
+        "usage_contexts": ["CTA_indicator", "emphasis", "navigation"]
+      },
+      {
+        "id": "location_pin",
+        "name": "Location Pin",
+        "path": "assets/brand/symbols/location-pin.svg",
+        "type": "svg",
+        "category": "symbol",
+        "priority": 7,
+        "colors": ["#013C87"],
+        "usage_contexts": ["map_element", "geographic_reference"]
+      },
+      {
+        "id": "route_line",
+        "name": "Route Line",
+        "path": "assets/brand/symbols/route-line.svg",
+        "type": "svg",
+        "category": "symbol",
+        "priority": 6,
+        "colors": ["#1D7742"],
+        "usage_contexts": ["path_illustration", "journey_metaphor"]
+      },
+      {
+        "id": "waypoint_dot",
+        "name": "Waypoint Dot",
+        "path": "assets/brand/symbols/waypoint-dot.svg",
+        "type": "svg",
+        "category": "symbol",
+        "priority": 6,
+        "colors": ["#013C87"],
+        "usage_contexts": ["milestone_marker", "checkpoint_icon"]
+      }
+    ],
+
+    "visual_system": [
+      {
+        "id": "africa_map_isometric_3d",
+        "name": "Africa Map - Isometric 3D",
+        "path": "assets/visual-system/africa-map/africa-map-isometric-3d.jfif",
+        "type": "jfif",
+        "category": "geographic_visual",
+        "priority": 7,
+        "usage_contexts": ["hero_background", "continental_context", "expansion_narrative"],
+        "description": "3D isometric representation of African continent"
+      },
+      {
+        "id": "africa_map_vector",
+        "name": "Africa Map - Vector (B&W)",
+        "path": "assets/visual-system/africa-map/africa-map-vector-black-white.jfif",
+        "type": "jfif",
+        "category": "geographic_visual",
+        "priority": 6,
+        "usage_contexts": ["infographic", "background_element", "geographic_reference"],
+        "description": "Clean vector map of Africa in black and white"
+      },
+      {
+        "id": "compass_design_ref_01",
+        "name": "Compass Design Reference 01",
+        "path": "assets/visual-system/compass/compass-design-reference-01.jfif",
+        "type": "jfif",
+        "category": "design_reference",
+        "priority": 6,
+        "usage_contexts": ["inspiration", "style_guide", "visual_direction"],
+        "description": "Compass design inspiration reference"
+      },
+      {
+        "id": "compass_design_ref_02",
+        "name": "Compass Design Reference 02",
+        "path": "assets/visual-system/compass/compass-design-reference-02.jfif",
+        "type": "jfif",
+        "category": "design_reference",
+        "priority": 6,
+        "usage_contexts": ["inspiration", "style_guide"]
+      },
+      {
+        "id": "route_animated_path",
+        "name": "Route - Animated Path",
+        "path": "assets/visual-system/routes/route-animated-path.svg",
+        "type": "svg",
+        "category": "route_element",
+        "priority": 6,
+        "colors": ["#1D7742"],
+        "usage_contexts": ["journey_illustration", "process_flow"]
+      },
+      {
+        "id": "route_curved_01",
+        "name": "Route - Curved 01",
+        "path": "assets/visual-system/routes/route-curved-01.svg",
+        "type": "svg",
+        "category": "route_element",
+        "priority": 6,
+        "colors": ["#013C87"],
+        "usage_contexts": ["flowing_path", "navigation"]
+      },
+      {
+        "id": "route_curved_02",
+        "name": "Route - Curved 02",
+        "path": "assets/visual-system/routes/route-curved-02.svg",
+        "type": "svg",
+        "category": "route_element",
+        "priority": 6,
+        "colors": ["#1D7742"]
+      },
+      {
+        "id": "route_dotted",
+        "name": "Route - Dotted Line",
+        "path": "assets/visual-system/routes/route-dotted-line.svg",
+        "type": "svg",
+        "category": "route_element",
+        "priority": 5,
+        "colors": ["#013C87"],
+        "usage_contexts": ["dashed_path", "optional_route"]
+      },
+      {
+        "id": "route_network",
+        "name": "Route - Network",
+        "path": "assets/visual-system/routes/route-network.svg",
+        "type": "svg",
+        "category": "route_element",
+        "priority": 6,
+        "colors": ["#1D7742"],
+        "usage_contexts": ["interconnection", "network_diagram"]
+      },
+      {
+        "id": "route_straight",
+        "name": "Route - Straight Segments",
+        "path": "assets/visual-system/routes/route-straight-segments.svg",
+        "type": "svg",
+        "category": "route_element",
+        "priority": 5,
+        "colors": ["#013C87"]
+      },
+      {
+        "id": "route_waypoints",
+        "name": "Route - With Waypoints",
+        "path": "assets/visual-system/routes/route-with-waypoints.svg",
+        "type": "svg",
+        "category": "route_element",
+        "priority": 7,
+        "colors": ["#013C87", "#1D7742"],
+        "usage_contexts": ["milestone_journey", "checkpoint_route"]
+      },
+      {
+        "id": "coordinates_compass_rose",
+        "name": "Coordinates - Compass Rose",
+        "path": "assets/visual-system/coordinates/coordinates-compass-rose.svg",
+        "type": "svg",
+        "category": "coordinate_system",
+        "priority": 6,
+        "colors": ["#013C87"]
+      },
+      {
+        "id": "coordinates_grid_01",
+        "name": "Coordinates - Grid 01",
+        "path": "assets/visual-system/coordinates/coordinates-grid-01.svg",
+        "type": "svg",
+        "category": "coordinate_system",
+        "priority": 5,
+        "colors": ["#013C87"]
+      },
+      {
+        "id": "coordinates_grid_02",
+        "name": "Coordinates - Grid 02",
+        "path": "assets/visual-system/coordinates/coordinates-grid-02.svg",
+        "type": "svg",
+        "category": "coordinate_system",
+        "priority": 5,
+        "colors": ["#1D7742"]
+      },
+      {
+        "id": "coordinates_hex_pattern",
+        "name": "Coordinates - Hex Pattern",
+        "path": "assets/visual-system/coordinates/coordinates-hex-pattern.svg",
+        "type": "svg",
+        "category": "coordinate_system",
+        "priority": 5,
+        "colors": ["#013C87", "#1D7742"]
+      },
+      {
+        "id": "coordinates_triangles",
+        "name": "Coordinates - Triangles",
+        "path": "assets/visual-system/coordinates/coordinates-triangles.svg",
+        "type": "svg",
+        "category": "coordinate_system",
+        "priority": 5,
+        "colors": ["#1D7742"]
+      }
+    ],
+
+    "references": {
+      "corporate": [
+        {
+          "id": "ref_corporate_internal_comms",
+          "name": "Corporate Internal Comms Branding Design",
+          "path": "assets/references/corporate/Corporate Internal Comms Branding Design Projects __ Photos, videos, logos, illustrations and branding.jfif",
+          "type": "jfif",
+          "category": "corporate_reference",
+          "priority": 6,
+          "usage_contexts": ["style_inspiration", "corporate_aesthetic", "internal_comms"]
+        },
+        {
+          "id": "ref_tanmeiah_office",
+          "name": "Tanmeiah Office Reference",
+          "path": "assets/references/corporate/Tanmeiah Office.jfif",
+          "type": "jfif",
+          "category": "corporate_reference",
+          "priority": 5,
+          "usage_contexts": ["workspace_inspiration", "professional_environment"]
+        },
+        {
+          "id": "ref_corp_other_1",
+          "name": "Corporate Reference 1",
+          "path": "assets/references/corporate/Corporate Reference 1.jfif",
+          "type": "jfif",
+          "category": "corporate_reference",
+          "priority": 5
+        },
+        {
+          "id": "ref_corp_other_2",
+          "name": "Corporate Reference 2",
+          "path": "assets/references/corporate/Corporate Reference 2.jfif",
+          "type": "jfif",
+          "category": "corporate_reference",
+          "priority": 5
+        },
+        {
+          "id": "ref_corp_other_3",
+          "name": "Corporate Reference 3",
+          "path": "assets/references/corporate/Corporate Reference 3.jfif",
+          "type": "jfif",
+          "category": "corporate_reference",
+          "priority": 5
+        },
+        {
+          "id": "ref_corp_other_4",
+          "name": "Corporate Reference 4",
+          "path": "assets/references/corporate/Corporate Reference 4.jfif",
+          "type": "jfif",
+          "category": "corporate_reference",
+          "priority": 5
+        },
+        {
+          "id": "ref_corp_other_5",
+          "name": "Corporate Reference 5",
+          "path": "assets/references/corporate/Corporate Reference 5.jfif",
+          "type": "jfif",
+          "category": "corporate_reference",
+          "priority": 5
+        }
+      ],
+      "flyers": [
+        {
+          "id": "ref_flyer_banner_design",
+          "name": "Banner Design",
+          "path": "assets/references/flyers/Banner Design.jfif",
+          "type": "jfif",
+          "category": "flyer_reference",
+          "priority": 7,
+          "usage_contexts": ["banner_style", "header_layout"]
+        },
+        {
+          "id": "ref_flyer_church",
+          "name": "Church Flyer Design",
+          "path": "assets/references/flyers/Church Flyer Design.jfif",
+          "type": "jfif",
+          "category": "flyer_reference",
+          "priority": 6
+        },
+        {
+          "id": "ref_flyer_corporate_template",
+          "name": "Corporate Business Flyer Template",
+          "path": "assets/references/flyers/Corporate Business Flyer Template AI, PSD, EPS.jfif",
+          "type": "jfif",
+          "category": "flyer_reference",
+          "priority": 8,
+          "usage_contexts": ["corporate_layout", "business_flyer"]
+        },
+        {
+          "id": "ref_flyer_creative_agency",
+          "name": "Creative Business Agency Flyer",
+          "path": "assets/references/flyers/Creative Business Agency Flyer Design _ Modern Corporate Poster Template as a sample.jfif",
+          "type": "jfif",
+          "category": "flyer_reference",
+          "priority": 8
+        },
+        {
+          "id": "ref_flyer_creative_studio",
+          "name": "Creative Studio Flyer",
+          "path": "assets/references/flyers/Creative Studio Flyer.jfif",
+          "type": "jfif",
+          "category": "flyer_reference",
+          "priority": 7
+        },
+        {
+          "id": "ref_flyer_digital_marketing",
+          "name": "Digital Business Marketing Company Flyer",
+          "path": "assets/references/flyers/Digital Business Marketing Company Flyer PSD.jfif",
+          "type": "jfif",
+          "category": "flyer_reference",
+          "priority": 8
+        },
+        {
+          "id": "ref_flyer_e_design",
+          "name": "E-Flyer Design",
+          "path": "assets/references/flyers/E-FLYER DESIGN.jfif",
+          "type": "jfif",
+          "category": "flyer_reference",
+          "priority": 6
+        },
+        {
+          "id": "ref_flyer_business_design",
+          "name": "Business Flyer Design",
+          "path": "assets/references/flyers/I will design your business flyer.jfif",
+          "type": "jfif",
+          "category": "flyer_reference",
+          "priority": 7
+        },
+        {
+          "id": "ref_flyer_consulting",
+          "name": "Professional Consulting Flyer",
+          "path": "assets/references/flyers/Professional Consulting Flyer _ AI Free Download - Pikbest.jfif",
+          "type": "jfif",
+          "category": "flyer_reference",
+          "priority": 8,
+          "usage_contexts": ["consulting_aesthetic", "professional_services"]
+        },
+        {
+          "id": "ref_flyer_registration",
+          "name": "Registration Flyer",
+          "path": "assets/references/flyers/Registration flyer.jfif",
+          "type": "jfif",
+          "category": "flyer_reference",
+          "priority": 7
+        },
+        {
+          "id": "ref_flyer_youth_church",
+          "name": "Youth Service Church Flyer",
+          "path": "assets/references/flyers/Youth Service Church flyer Design.jfif",
+          "type": "jfif",
+          "category": "flyer_reference",
+          "priority": 6
+        },
+        {
+          "id": "ref_flyer_png_01",
+          "name": "Flyer Reference PNG 01",
+          "path": "assets/references/flyers/png-for-flow/flyer-01.png",
+          "type": "png",
+          "category": "flyer_reference",
+          "priority": 7,
+          "description": "Reference flyer converted to PNG for Gemini"
+        },
+        {
+          "id": "ref_flyer_png_02",
+          "name": "Flyer Reference PNG 02",
+          "path": "assets/references/flyers/png-for-flow/flyer-02.png",
+          "type": "png",
+          "category": "flyer_reference",
+          "priority": 7
+        },
+        {
+          "id": "ref_flyer_png_03",
+          "name": "Flyer Reference PNG 03",
+          "path": "assets/references/flyers/png-for-flow/flyer-03.png",
+          "type": "png",
+          "category": "flyer_reference",
+          "priority": 7
+        },
+        {
+          "id": "ref_flyer_png_04",
+          "name": "Flyer Reference PNG 04",
+          "path": "assets/references/flyers/png-for-flow/flyer-04.png",
+          "type": "png",
+          "category": "flyer_reference",
+          "priority": 7
+        },
+        {
+          "id": "ref_flyer_png_05",
+          "name": "Flyer Reference PNG 05",
+          "path": "assets/references/flyers/png-for-flow/flyer-05.png",
+          "type": "png",
+          "category": "flyer_reference",
+          "priority": 7
+        },
+        {
+          "id": "ref_flyer_png_06",
+          "name": "Flyer Reference PNG 06",
+          "path": "assets/references/flyers/png-for-flow/flyer-06.png",
+          "type": "png",
+          "category": "flyer_reference",
+          "priority": 7
+        }
+      ],
+      "posters": [
+        {
+          "id": "ref_poster_batch",
+          "name": "Batch Poster",
+          "path": "assets/references/posters/batch poster.jfif",
+          "type": "jfif",
+          "category": "poster_reference",
+          "priority": 6
+        },
+        {
+          "id": "ref_poster_church",
+          "name": "Church Poster",
+          "path": "assets/references/posters/Church poster.jfif",
+          "type": "jfif",
+          "category": "poster_reference",
+          "priority": 6
+        },
+        {
+          "id": "ref_poster_design_1",
+          "name": "Poster Design (1)",
+          "path": "assets/references/posters/Poster Design (1).jfif",
+          "type": "jfif",
+          "category": "poster_reference",
+          "priority": 6
+        },
+        {
+          "id": "ref_poster_sunday_service",
+          "name": "Sunday Service Poster",
+          "path": "assets/references/posters/SUNDAY SERVICE.jfif",
+          "type": "jfif",
+          "category": "poster_reference",
+          "priority": 7
+        },
+        {
+          "id": "ref_poster_tedx",
+          "name": "TEDx Landmark University Date Reveal",
+          "path": "assets/references/posters/TEDx Landmark University Date Reveal Design.jfif",
+          "type": "jfif",
+          "category": "poster_reference",
+          "priority": 7
+        },
+        {
+          "id": "ref_poster_thank_you",
+          "name": "Thank You Poster",
+          "path": "assets/references/posters/Thank you poster.jfif",
+          "type": "jfif",
+          "category": "poster_reference",
+          "priority": 6
+        }
+      ],
+      "social": [
+        {
+          "id": "ref_social_church",
+          "name": "Church Social Media Flyers Design",
+          "path": "assets/references/social/Church Social Media flyers design - Aziable Josue.jfif",
+          "type": "jfif",
+          "category": "social_reference",
+          "priority": 6
+        },
+        {
+          "id": "ref_social_accounting",
+          "name": "Contabilidade Social Media",
+          "path": "assets/references/social/Contabilidade Assessoria Contábil Especial para Mei Social Media PSD Editável — Designi.jfif",
+          "type": "jfif",
+          "category": "social_reference",
+          "priority": 5
+        },
+        {
+          "id": "ref_social_essence_academy",
+          "name": "Essence Academy Social Ad",
+          "path": "assets/references/social/Pr Social Ad flyers for Essence Academy, Figma _ Canva _ Photoshop _ Social ad design, flyers 3.jfif",
+          "type": "jfif",
+          "category": "social_reference",
+          "priority": 6
+        },
+        {
+          "id": "ref_social_countdown",
+          "name": "Countdown (10 Days To Go)",
+          "path": "assets/references/social/⏳ 10 Days to Go.jfif",
+          "type": "jfif",
+          "category": "social_reference",
+          "priority": 5
+        }
+      ]
+    },
+
+    "team": [
+      {
+        "id": "team_director_general",
+        "name": "Team - Director General",
+        "path": "assets/team/team_director_general_1788911292003-Tm0lKkVp.jpg",
+        "type": "jpg",
+        "category": "team_photo",
+        "priority": 9,
+        "role": "Directeur Général",
+        "usage_contexts": ["about_page", "leadership", "corporate_profile"]
+      },
+      {
+        "id": "team_tech_director",
+        "name": "Team - Tech Director",
+        "path": "assets/team/team_tech_director_1788911305837-BLn5O_Av.jpg",
+        "type": "jpg",
+        "category": "team_photo",
+        "priority": 8,
+        "role": "Directeur Technique",
+        "usage_contexts": ["about_page", "tech_expertise", "leadership"]
+      },
+      {
+        "id": "team_academy_director",
+        "name": "Team - Academy Director",
+        "path": "assets/team/team_academy_director_1788911321642-RGJiGfpA.jpg",
+        "type": "jpg",
+        "category": "team_photo",
+        "priority": 8,
+        "role": "Directeur Académie",
+        "usage_contexts": ["about_page", "training_programs", "education"]
+      },
+      {
+        "id": "team_security_lead",
+        "name": "Team - Security Lead",
+        "path": "assets/team/team_security_lead_1788911332683-C0chyj0L.jpg",
+        "type": "jpg",
+        "category": "team_photo",
+        "priority": 8,
+        "role": "Responsable Sécurité",
+        "usage_contexts": ["about_page", "security_expertise", "compliance"]
+      },
+      {
+        "id": "team_member_5",
+        "name": "Team Member 5",
+        "path": "assets/team/team_member_5.jpg",
+        "type": "jpg",
+        "category": "team_photo",
+        "priority": 7
+      }
+    ],
+
+    "contact_sheets": [
+      {
+        "id": "contact_sheet_flyers",
+        "name": "Contact Sheet - Flyers",
+        "path": "assets/contact-sheets/contact-sheet-flyers.jpg",
+        "type": "jpg",
+        "category": "contact_sheet",
+        "priority": 6,
+        "description": "Compilation of 11 flyer references",
+        "contains_items": 11
+      },
+      {
+        "id": "contact_sheet_posters",
+        "name": "Contact Sheet - Posters",
+        "path": "assets/contact-sheets/contact-sheet-posters.jpg",
+        "type": "jpg",
+        "category": "contact_sheet",
+        "priority": 6,
+        "description": "Compilation of 6 poster references",
+        "contains_items": 6
+      },
+      {
+        "id": "contact_sheet_social",
+        "name": "Contact Sheet - Social Media",
+        "path": "assets/contact-sheets/contact-sheet-social.jpg",
+        "type": "jpg",
+        "category": "contact_sheet",
+        "priority": 6,
+        "description": "Compilation of 4 social media references",
+        "contains_items": 4
+      }
+    ],
+
+    "projects": [
+      {
+        "id": "project_lasted_logo",
+        "name": "Project LASTED - Logo (PNG)",
+        "path": "assets/projects/LASTED_2-removebg-preview (1).png",
+        "type": "png",
+        "category": "project_asset",
+        "priority": 5,
+        "project": "LASTED",
+        "description": "Logo asset without background"
+      },
+      {
+        "id": "project_logo",
+        "name": "Project - Generic Logo",
+        "path": "assets/projects/logo.svg",
+        "type": "svg",
+        "category": "project_asset",
+        "priority": 5
+      },
+      {
+        "id": "project_readme",
+        "name": "Project - README",
+        "path": "assets/projects/README.md",
+        "type": "md",
+        "category": "documentation",
+        "priority": 3
+      }
+    ],
+
+    "templates": [
+      {
+        "id": "template_company_policy",
+        "name": "Company Policy Layout",
+        "path": "assets/templates/Company Policy Layout.jfif",
+        "type": "jfif",
+        "category": "template_general",
+        "priority": 5
+      },
+      {
+        "id": "template_pastor_presentation",
+        "name": "Pastor Character Presentation Design",
+        "path": "assets/templates/Diseño Presentación Personaje Pastor.jfif",
+        "type": "jfif",
+        "category": "template_general",
+        "priority": 5
+      },
+      {
+        "id": "template_recruitment_consulting",
+        "name": "Recruitment & Consulting Template",
+        "path": "assets/templates/Recruitment & Consulting_.jfif",
+        "type": "jfif",
+        "category": "template_general",
+        "priority": 6
+      },
+      {
+        "id": "template_magazine_cover",
+        "name": "Business Magazine Cover Template",
+        "path": "assets/templates/marketing/Business Magazine Cover Template.jfif",
+        "type": "jfif",
+        "category": "template_marketing",
+        "priority": 6
+      },
+      {
+        "id": "template_ecommerce_digital",
+        "name": "E-Commerce Digital Products",
+        "path": "assets/templates/marketing/e-commerce des produits digitaux.jfif",
+        "type": "jfif",
+        "category": "template_marketing",
+        "priority": 5
+      },
+      {
+        "id": "template_poster_avoid_investment",
+        "name": "Poster - Avoid Poor Investment Comms",
+        "path": "assets/templates/posters/For sure affiche pour éviter les gens à investir dans la communication visuelle.jfif",
+        "type": "jfif",
+        "category": "template_poster",
+        "priority": 5
+      },
+      {
+        "id": "template_poster_jawatan_kosong",
+        "name": "Poster - Jawatan Kosong (Job Opening)",
+        "path": "assets/templates/posters/JAWATAN KOSONG.jfif",
+        "type": "jfif",
+        "category": "template_poster",
+        "priority": 5
+      },
+      {
+        "id": "template_poster_design",
+        "name": "Poster - Design Template",
+        "path": "assets/templates/posters/POSTER DESIGN.jfif",
+        "type": "jfif",
+        "category": "template_poster",
+        "priority": 5
+      }
+    ]
+  },
+
+  "generation_guidelines": {
+    "color_rules": {
+      "primary_blue": {
+        "hex": "#013C87",
+        "must_use_exactly": true,
+        "forbidden": ["navy", "dark blue", "similar shades"]
+      },
+      "primary_green": {
+        "hex": "#1D7742",
+        "must_use_exactly": true,
+        "forbidden": ["forest green", "dark green"]
+      }
+    },
+    "logo_rules": {
+      "never_recreate": "NEVER recreate from memory - always reference exact SVG",
+      "preserve_identity": "Maintain exact logo proportions and colors",
+      "placement": ["top-left", "top-center", "centered"],
+      "sizing": { "min": "5%", "max": "25%", "recommended": "15%" }
+    },
+    "composition_rules": [
+      "Professional and balanced layout",
+      "Clear focal point",
+      "Generous white space",
+      "No cluttering",
+      "Readable text with 4.5+ contrast ratio",
+      "Consistent brand elements"
+    ],
+    "prohibited": [
+      "Recreating logos from memory",
+      "Approximate colors",
+      "Fake or false execution claims",
+      "Unrelated branding",
+      "African stereotypes or clichés",
+      "Cluttered designs",
+      "Illegible text",
+      "Multiple competing CTAs"
+    ]
+  },
+
+  "metadata": {
+    "total_assets": 88,
+    "last_updated": "2026-09-29T14:30:00Z",
+    "version": "2.0",
+    "status": "production_ready",
+    "category_breakdown": {
+      "logos": 6,
+      "symbols": 8,
+      "visual_system": 16,
+      "references_corporate": 7,
+      "references_flyers": 17,
+      "references_posters": 6,
+      "references_social": 4,
+      "team_photos": 5,
+      "contact_sheets": 3,
+      "projects": 3,
+      "templates": 8
+    },
+    "file_formats": {
+      "svg": 33,
+      "jpg": 9,
+      "jfif": 30,
+      "png": 13,
+      "md": 1,
+      "other": 2
+    }
+  }
+}

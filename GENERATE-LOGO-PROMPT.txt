@@ -1,0 +1,72 @@
+========================================
+PROMPT POUR GÉNÉRER LE LOGO AFRIQUE BOUSSOLE
+========================================
+
+Copy-paste this prompt into any AI image generator (DALL-E, Midjourney, Stable Diffusion, etc):
+
+---
+
+Create a professional corporate logo for "AFRIQUE BOUSSOLE GROUPE" with these EXACT specifications:
+
+STRUCTURE (3 parts, horizontal layout):
+
+1. LEFT SECTION (35% width):
+   - Africa continent silhouette
+   - Solid fill: Dark blue #013C87
+   - White network overlay: multiple dots connected by lines (representing connectivity)
+   - White country border lines visible within the continent
+
+2. CENTER SECTION (15% width):
+   - Circular compass icon
+   - Background: Green #1D7742
+   - White bold letter "G" centered inside the circle
+   - Position: Slightly overlapping the right edge of the Africa map
+
+3. RIGHT SECTION (50% width):
+   Three stacked text lines:
+   - Line 1: "AFRIQUE" in green #1D7742 (extra bold, uppercase, large)
+   - Line 2: "BOUSSOLE" in blue #013C87 (extra bold, uppercase, large, same size as line 1)
+   - Line 3: [horizontal line] "GROUPE" [horizontal line] in blue #013C87 (bold, uppercase, smaller, wide letter spacing)
+
+COLORS (EXACT - NO APPROXIMATIONS):
+- Primary Blue: #013C87 (RGB: 1, 60, 135)
+- Primary Green: #1D7742 (RGB: 29, 119, 66)
+- White: #FFFFFF (RGB: 255, 255, 255)
+
+LAYOUT REQUIREMENTS:
+- All elements vertically centered
+- Africa map + compass (slight overlap) + text wordmark
+- Professional, clean, corporate design
+- Aspect ratio: approximately 16:5 (wide horizontal)
+
+CRITICAL ELEMENTS (DO NOT OMIT):
+✓ Network pattern (dots + lines) on Africa map
+✓ White "G" letter in green compass circle
+✓ Word order: AFRIQUE (green) → BOUSSOLE (blue) → GROUPE (blue with lines)
+✓ Exact colors: #013C87 and #1D7742
+
+STYLE:
+- Corporate, professional, modern
+- Vector-style, clean lines
+- High contrast
+- Suitable for business cards, letterhead, website
+
+---
+
+ALTERNATIVE SIMPLIFIED PROMPT (if the above is too complex):
+
+Professional corporate logo: Left side shows Africa continent in dark blue #013C87 with white network pattern overlay. Center has green circular compass icon #1D7742 with white letter "G". Right side displays stacked text "AFRIQUE" (green) above "BOUSSOLE" (blue) above "GROUPE" (blue, smaller, with flanking lines). Modern, clean, corporate style. Colors MUST be exactly #013C87 and #1D7742.
+
+---
+
+VERIFICATION CHECKLIST:
+After generation, verify:
+□ Africa map present in blue #013C87
+□ White network dots/lines visible on map
+□ Green compass circle with white "G"
+□ AFRIQUE in green above BOUSSOLE in blue
+□ GROUPE with horizontal lines (blue)
+□ Colors are EXACT (not approximate)
+□ All elements aligned and professional
+
+========================================
