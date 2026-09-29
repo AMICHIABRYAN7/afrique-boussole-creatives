@@ -1,58 +1,111 @@
 # Afrique Boussole Creative Intelligence Skill
 
+**Version** : 2.0 (Provider-Agnostic)  
+**Status** : Production-Ready  
+**Last Updated** : Septembre 2026
+
+---
+
 ## Overview
 
-This Skill provides comprehensive frameworks, guidelines, and workflows for creating authentic, strategic, and on-brand creative communications for Afrique Boussole.
+This Skill provides comprehensive frameworks and workflows for creating professional, strategic, and on-brand creative communications for Afrique Boussole.
 
-It serves as a **Creative Director AI** capable of:
-
-- Analyzing marketing briefs
-- Developing creative strategies
-- Designing visuals (flyers, posters, advertisements, social media)
-- Adapting creatives across formats and platforms
-- Performing quality control
-- Building complete campaigns
+**Key Principle**: Provider-agnostic — works with any host environment.
 
 ---
 
-## Quick Start
+## What This Skill Does
 
-### 🚀 **COMMANDES SLASH (Méthode Rapide)**
-
-Tapez dans Kiro :
-- **`/campagne`** - Créer une campagne marketing complète
-- **`/flyer`** - Créer un flyer professionnel
-- **`/affiche`** - Créer une affiche événementielle  
-- **`/comm`** - Créer du contenu de communication
-
-**→ [Guide de démarrage complet](QUICK-START.md)**
-
-### ⚠️ **ASSET-DRIVEN DESIGN**
-
-Chaque commande slash charge automatiquement les assets professionnels avant génération :
-- ✅ 7 logos brand (full, mark, monochrome)
-- ✅ 4 flyers référence + 6 posters + 4 social designs
-- ✅ Compass & Africa map visual system
-- ✅ Professional typography system (Inter hierarchy)
-- ✅ Brand color palette (#013C87 Blue, #1D7742 Green)
-
-**Garantie** : Tous les créations utilisent obligatoirement les assets chargés. Zéro design "générique".
+✅ **Collects briefs adaptively** — Asks only critical missing questions, never repeats  
+✅ **Discovers assets intelligently** — Selects relevant brand assets and references  
+✅ **Develops creative strategy** — Defines angles, positioning, messaging  
+✅ **Generates visuals** — Uses available image capabilities (or provides structured request)  
+✅ **Enforces quality** — Runs mandatory QA before delivery  
+✅ **Adapts formats** — Recomposes for multiple platforms/sizes  
 
 ---
 
-### For Users
+## Starting a Creative Project
 
-1. **Read** : `SKILL.md` (this is your orchestrator)
-2. **Provide** : A creative brief (objectives, audience, message, CTA)
-3. **Skill loads** : Relevant reference documents automatically
-4. **Output** : Professional creative in your requested format(s)
+### Method 1: Natural Language (Works Everywhere)
 
-### For Designers
+```
+"Create a flyer for Afrique Boussole about our 
+cybersecurity training for SMEs"
+```
 
-1. **Reference** : `references/` directory for detailed guidance
-2. **Choose** : Appropriate workflow from `workflows/` directory
-3. **Execute** : Follow step-by-step process
-4. **Validate** : Use `scripts/validate-creative.py` for QA
+→ Skill asks adaptive questions → Creates professional flyer
+
+### Method 2: Slash Commands (Kiro Only — Optional)
+
+```
+/flyer
+```
+
+→ Routes to flyer workflow → Same result
+
+Both produce identical results. Method 1 works in any environment.
+
+---
+
+## Asset-Driven Design Guarantee
+
+Every creative uses:
+- ✅ Official brand assets (logo, compass, patterns)
+- ✅ Professional references analyzed for principles
+- ✅ Exact brand colors (#013C87 Blue, #1D7742 Green)
+- ✅ Mandatory quality control before delivery
+
+**Zero generic templates. 100% authentic Afrique Boussole.**
+
+---
+
+## Quick Start Guide
+
+### Step 1: Request a Creative
+
+```
+"I need a social media post for our leadership program"
+```
+
+### Step 2: Answer Questions
+
+The Skill asks adaptive questions to complete the brief.
+
+### Step 3: Get Your Creative
+
+The Skill automatically:
+- Loads relevant assets
+- Develops creative strategy
+- Generates or composes the visual
+- Runs quality control
+- Delivers final files
+
+---
+
+## For Different Users
+
+### Designer/Marketer
+
+1. Read `SKILL.md` (overview)
+2. Read appropriate workflow (`workflows/flyer.md`, `workflows/poster.md`, etc.)
+3. Request a creative
+4. Iterate on feedback
+5. Deliver final assets
+
+### Developer/Integrator
+
+1. Read `SKILL.md` (frontmatter and core workflow)
+2. Read `references/generation-protocol.md` (capability detection)
+3. Integrate generation mode appropriate to your platform
+4. Validate briefs against `schemas/creative-brief.json`
+5. Test with `tests/README.md`
+
+### Kiro User
+
+1. Optional: Use slash commands (`/flyer`, `/poster`, etc.)
+2. Or: Use natural language (same result)
+3. Everything else is identical
 
 ---
 

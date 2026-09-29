@@ -1,0 +1,200 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Creative Brief",
+  "description": "Structured brief for Afrique Boussole creative production",
+  "type": "object",
+  "required": ["objective", "audience", "primary_message", "format"],
+  "properties": {
+    "project_id": {
+      "type": "string",
+      "description": "Unique project identifier"
+    },
+    "project_name": {
+      "type": "string",
+      "description": "Project name"
+    },
+    "created_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Brief creation date"
+    },
+    "objective": {
+      "type": "string",
+      "enum": [
+        "lead_generation",
+        "brand_awareness",
+        "event_promotion",
+        "product_launch",
+        "educational",
+        "thought_leadership",
+        "community_engagement",
+        "recruitment",
+        "partnership",
+        "institutional"
+      ],
+      "description": "Primary campaign objective"
+    },
+    "subject": {
+      "type": "string",
+      "description": "What is this creative about?"
+    },
+    "audience": {
+      "type": "object",
+      "properties": {
+        "primary": {
+          "type": "string",
+          "description": "Primary audience segment"
+        },
+        "secondary": {
+          "type": "string",
+          "description": "Secondary audience"
+        },
+        "demographics": {
+          "type": "string",
+          "description": "Age, gender, location, profession, etc."
+        }
+      },
+      "required": ["primary"]
+    },
+    "primary_message": {
+      "type": "string",
+      "maxLength": 150,
+      "description": "Core message in one sentence (max 150 chars)"
+    },
+    "secondary_message": {
+      "type": "string",
+      "description": "Supporting message (optional)"
+    },
+    "hook": {
+      "type": "string",
+      "description": "Attention-grabbing element"
+    },
+    "value_proposition": {
+      "type": "string",
+      "description": "Why should audience care?"
+    },
+    "proof_elements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Credibility signals (testimonials, stats, certifications, etc.)"
+    },
+    "cta": {
+      "type": "object",
+      "properties": {
+        "action": {
+          "type": "string",
+          "enum": [
+            "sign_up",
+            "download",
+            "contact",
+            "visit_website",
+            "purchase",
+            "register",
+            "learn_more",
+            "share",
+            "call"
+          ]
+        },
+        "destination": {
+          "type": "string",
+          "description": "Where does the CTA lead?"
+        }
+      },
+      "required": ["action"]
+    },
+    "format": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "flyer_a4",
+          "flyer_a5",
+          "poster_a3",
+          "poster_a2",
+          "social_1x1",
+          "social_4x5",
+          "social_9x16",
+          "social_16x9",
+          "email",
+          "web_banner",
+          "advertisement",
+          "campaign_multi"
+        ]
+      },
+      "description": "Required output formats"
+    },
+    "platform": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "instagram",
+          "linkedin",
+          "facebook",
+          "tiktok",
+          "email",
+          "web",
+          "print",
+          "outdoor"
+        ]
+      },
+      "description": "Distribution platforms"
+    },
+    "tone": {
+      "type": "string",
+      "enum": [
+        "corporate",
+        "professional",
+        "approachable",
+        "energetic",
+        "educational",
+        "inspirational"
+      ],
+      "description": "Desired tone/voice"
+    },
+    "visual_direction": {
+      "type": "string",
+      "description": "Style, mood, aesthetic preferences"
+    },
+    "required_information": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Specific info that must appear (dates, prices, contact, etc.)"
+    },
+    "assets_provided": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Files/images provided by user"
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Reference files or URLs"
+    },
+    "constraints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Limitations or requirements"
+    },
+    "deadline": {
+      "type": "string",
+      "format": "date",
+      "description": "Project deadline"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "complete", "approved", "in_progress"],
+      "description": "Brief completion status"
+    }
+  }
+}

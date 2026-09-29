@@ -1,0 +1,148 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Image Generation Request",
+  "description": "Structured request for image generation when no host image capability available",
+  "type": "object",
+  "required": ["mode", "prompt", "dimensions"],
+  "properties": {
+    "generation_id": {
+      "type": "string",
+      "description": "Unique generation request ID"
+    },
+    "mode": {
+      "type": "string",
+      "enum": ["MODE_A", "MODE_B", "MODE_C", "MODE_D"],
+      "description": "Generation mode from generation-protocol.md"
+    },
+    "prompt": {
+      "type": "string",
+      "description": "Primary prompt for image generation (8-bloc structure)"
+    },
+    "negative_prompt": {
+      "type": "string",
+      "description": "What NOT to generate"
+    },
+    "dimensions": {
+      "type": "object",
+      "properties": {
+        "width": {
+          "type": "integer",
+          "description": "Width in pixels"
+        },
+        "height": {
+          "type": "integer",
+          "description": "Height in pixels"
+        },
+        "dpi": {
+          "type": "integer",
+          "description": "Dots per inch (72 web, 300 print)"
+        },
+        "aspect_ratio": {
+          "type": "string",
+          "description": "Aspect ratio (e.g., '16:9', '1:1', '4:5')"
+        }
+      },
+      "required": ["width", "height"]
+    },
+    "style": {
+      "type": "string",
+      "description": "Style preference (realistic, artistic, abstract, etc.)"
+    },
+    "platform": {
+      "type": "string",
+      "enum": ["midjourney", "dalle", "flux", "stable_diffusion", "generic"],
+      "description": "Target platform/model"
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": ["brand_asset", "reference_image", "source_image"]
+          },
+          "path": {
+            "type": "string"
+          },
+          "usage": {
+            "type": "string",
+            "description": "How to use this reference"
+          }
+        }
+      },
+      "description": "Reference images to use"
+    },
+    "brand_assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "path": {
+            "type": "string"
+          },
+          "placement": {
+            "type": "string",
+            "description": "Where to place in final composition"
+          },
+          "size": {
+            "type": "string",
+            "description": "Relative size or pixel dimensions"
+          }
+        }
+      },
+      "description": "Official Afrique Boussole assets to integrate"
+    },
+    "composition": {
+      "type": "string",
+      "enum": [
+        "rule_of_thirds",
+        "center",
+        "split",
+        "asymmetric",
+        "z_layout",
+        "f_layout",
+        "diagonal"
+      ],
+      "description": "Preferred composition system"
+    },
+    "text_space": {
+      "type": "object",
+      "properties": {
+        "location": {
+          "type": "string",
+          "enum": ["top", "bottom", "left", "right", "center", "distributed"]
+        },
+        "percentage": {
+          "type": "number",
+          "description": "Percentage of image for text (0-100)"
+        }
+      },
+      "description": "Reserve space for text overlay"
+    },
+    "color_palette": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Specific colors to include (hex codes)"
+    },
+    "constraints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Additional constraints or requirements"
+    },
+    "instructions": {
+      "type": "string",
+      "description": "Instructions for manual submission (if MODE_D)"
+    }
+  }
+}
