@@ -1,183 +1,415 @@
 {
   "schema_version": "1.0",
   "generated": "2026-09-29",
-  "total_assets": 85,
+  "total_assets": 88,
   "assets": [
     {
       "id": "brand/logos_afrique_boussole_emblem",
       "path": "brand/logos/afrique-boussole-emblem.svg",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "logo",
       "name": "Afrique Boussole Emblem",
-      "description": "Afrique Boussole Emblem — other asset",
+      "description": "Afrique Boussole Emblem — logo asset",
       "tags": [
-        "other"
+        "logo",
+        "brand",
+        "official"
       ],
       "usage": [],
-      "priority": 5,
+      "priority": 10,
       "status": "active"
     },
     {
       "id": "brand/logos_afrique_boussole_emblem_dark",
       "path": "brand/logos/afrique-boussole-emblem-dark.svg",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "logo",
       "name": "Afrique Boussole Emblem Dark",
-      "description": "Afrique Boussole Emblem Dark — other asset",
+      "description": "Afrique Boussole Emblem Dark — logo asset",
       "tags": [
-        "other"
+        "logo",
+        "brand",
+        "official"
       ],
       "usage": [],
-      "priority": 5,
+      "priority": 10,
       "status": "active"
     },
     {
       "id": "brand/logos_afrique_boussole_logo",
       "path": "brand/logos/afrique-boussole-logo.svg",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "logo",
       "name": "Afrique Boussole Logo",
-      "description": "Afrique Boussole Logo — other asset",
+      "description": "Afrique Boussole Logo — logo asset",
       "tags": [
-        "other"
+        "logo",
+        "brand",
+        "official"
       ],
       "usage": [],
-      "priority": 5,
+      "priority": 10,
       "status": "active"
     },
     {
       "id": "brand/logos_afrique_boussole_logo_dark",
       "path": "brand/logos/afrique-boussole-logo-dark.svg",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "logo",
       "name": "Afrique Boussole Logo Dark",
-      "description": "Afrique Boussole Logo Dark — other asset",
+      "description": "Afrique Boussole Logo Dark — logo asset",
       "tags": [
-        "other"
+        "logo",
+        "brand",
+        "official"
       ],
       "usage": [],
-      "priority": 5,
+      "priority": 10,
       "status": "active"
     },
     {
       "id": "brand/logos_logo",
       "path": "brand/logos/logo.png",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "logo",
       "name": "Logo",
-      "description": "Logo — other asset",
+      "description": "Logo — logo asset",
       "tags": [
-        "other"
+        "logo",
+        "brand",
+        "official"
       ],
       "usage": [],
-      "priority": 5,
+      "priority": 10,
       "status": "active"
     },
     {
       "id": "brand/logos_logo",
       "path": "brand/logos/LOGO.svg",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "logo",
       "name": "Logo",
-      "description": "Logo — other asset",
+      "description": "Logo — logo asset",
       "tags": [
-        "other"
+        "logo",
+        "brand",
+        "official"
       ],
       "usage": [],
-      "priority": 5,
+      "priority": 10,
       "status": "active"
     },
     {
       "id": "brand/symbols_compass_icon_detailed",
       "path": "brand/symbols/compass-icon-detailed.svg",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "symbol",
       "name": "Compass Icon Detailed",
-      "description": "Compass Icon Detailed — other asset",
+      "description": "Compass Icon Detailed — symbol asset",
       "tags": [
-        "other"
+        "symbol",
+        "brand",
+        "official"
       ],
       "usage": [],
-      "priority": 5,
+      "priority": 7,
       "status": "active"
     },
     {
       "id": "brand/symbols_compass_icon_simple",
       "path": "brand/symbols/compass-icon-simple.svg",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "symbol",
       "name": "Compass Icon Simple",
-      "description": "Compass Icon Simple — other asset",
+      "description": "Compass Icon Simple — symbol asset",
       "tags": [
-        "other"
+        "symbol",
+        "brand",
+        "official"
       ],
       "usage": [],
-      "priority": 5,
+      "priority": 7,
       "status": "active"
     },
     {
       "id": "brand/symbols_compass_needle",
       "path": "brand/symbols/compass-needle.svg",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "symbol",
       "name": "Compass Needle",
-      "description": "Compass Needle — other asset",
+      "description": "Compass Needle — symbol asset",
       "tags": [
-        "other"
+        "symbol",
+        "brand",
+        "official"
       ],
       "usage": [],
-      "priority": 5,
+      "priority": 7,
       "status": "active"
     },
     {
       "id": "brand/symbols_coordinate_cross",
       "path": "brand/symbols/coordinate-cross.svg",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "symbol",
       "name": "Coordinate Cross",
-      "description": "Coordinate Cross — other asset",
+      "description": "Coordinate Cross — symbol asset",
       "tags": [
-        "other"
+        "symbol",
+        "brand",
+        "official"
       ],
       "usage": [],
-      "priority": 5,
+      "priority": 7,
       "status": "active"
     },
     {
       "id": "brand/symbols_direction_arrow",
       "path": "brand/symbols/direction-arrow.svg",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "symbol",
       "name": "Direction Arrow",
-      "description": "Direction Arrow — other asset",
+      "description": "Direction Arrow — symbol asset",
       "tags": [
-        "other"
+        "symbol",
+        "brand",
+        "official"
       ],
       "usage": [],
-      "priority": 5,
+      "priority": 7,
       "status": "active"
     },
     {
       "id": "brand/symbols_location_pin",
       "path": "brand/symbols/location-pin.svg",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "symbol",
       "name": "Location Pin",
-      "description": "Location Pin — other asset",
+      "description": "Location Pin — symbol asset",
       "tags": [
-        "other"
+        "symbol",
+        "brand",
+        "official"
       ],
       "usage": [],
-      "priority": 5,
+      "priority": 7,
       "status": "active"
     },
     {
       "id": "brand/symbols_route_line",
       "path": "brand/symbols/route-line.svg",
+      "type": "brand_asset",
+      "category": "symbol",
+      "name": "Route Line",
+      "description": "Route Line — symbol asset",
+      "tags": [
+        "symbol",
+        "brand",
+        "official"
+      ],
+      "usage": [],
+      "priority": 7,
+      "status": "active"
+    },
+    {
+      "id": "brand/symbols_waypoint_dot",
+      "path": "brand/symbols/waypoint-dot.svg",
+      "type": "brand_asset",
+      "category": "symbol",
+      "name": "Waypoint Dot",
+      "description": "Waypoint Dot — symbol asset",
+      "tags": [
+        "symbol",
+        "brand",
+        "official"
+      ],
+      "usage": [],
+      "priority": 7,
+      "status": "active"
+    },
+    {
+      "id": "visual-system/africa-map_africa_map_isometric_3d",
+      "path": "visual-system/africa-map/africa-map-isometric-3d.jfif",
+      "type": "brand_asset",
+      "category": "map",
+      "name": "Africa Map Isometric 3D",
+      "description": "Africa Map Isometric 3D — map asset",
+      "tags": [
+        "map",
+        "brand",
+        "official"
+      ],
+      "usage": [],
+      "priority": 7,
+      "status": "active"
+    },
+    {
+      "id": "visual-system/africa-map_africa_map_vector_black_white",
+      "path": "visual-system/africa-map/africa-map-vector-black-white.jfif",
+      "type": "brand_asset",
+      "category": "map",
+      "name": "Africa Map Vector Black White",
+      "description": "Africa Map Vector Black White — map asset",
+      "tags": [
+        "map",
+        "brand",
+        "official"
+      ],
+      "usage": [],
+      "priority": 7,
+      "status": "active"
+    },
+    {
+      "id": "visual-system/compass_compass_design_reference_01",
+      "path": "visual-system/compass/compass-design-reference-01.jfif",
+      "type": "brand_asset",
+      "category": "compass",
+      "name": "Compass Design Reference 01",
+      "description": "Compass Design Reference 01 — compass asset",
+      "tags": [
+        "compass",
+        "brand",
+        "official"
+      ],
+      "usage": [],
+      "priority": 6,
+      "status": "active"
+    },
+    {
+      "id": "visual-system/compass_compass_design_reference_02",
+      "path": "visual-system/compass/compass-design-reference-02.jfif",
+      "type": "brand_asset",
+      "category": "compass",
+      "name": "Compass Design Reference 02",
+      "description": "Compass Design Reference 02 — compass asset",
+      "tags": [
+        "compass",
+        "brand",
+        "official"
+      ],
+      "usage": [],
+      "priority": 6,
+      "status": "active"
+    },
+    {
+      "id": "visual-system/routes_route_animated_path",
+      "path": "visual-system/routes/route-animated-path.svg",
+      "type": "brand_asset",
+      "category": "route",
+      "name": "Route Animated Path",
+      "description": "Route Animated Path — route asset",
+      "tags": [
+        "route",
+        "brand",
+        "official"
+      ],
+      "usage": [],
+      "priority": 6,
+      "status": "active"
+    },
+    {
+      "id": "visual-system/routes_route_curved_01",
+      "path": "visual-system/routes/route-curved-01.svg",
+      "type": "brand_asset",
+      "category": "route",
+      "name": "Route Curved 01",
+      "description": "Route Curved 01 — route asset",
+      "tags": [
+        "route",
+        "brand",
+        "official"
+      ],
+      "usage": [],
+      "priority": 6,
+      "status": "active"
+    },
+    {
+      "id": "visual-system/routes_route_curved_02",
+      "path": "visual-system/routes/route-curved-02.svg",
+      "type": "brand_asset",
+      "category": "route",
+      "name": "Route Curved 02",
+      "description": "Route Curved 02 — route asset",
+      "tags": [
+        "route",
+        "brand",
+        "official"
+      ],
+      "usage": [],
+      "priority": 6,
+      "status": "active"
+    },
+    {
+      "id": "visual-system/routes_route_dotted_line",
+      "path": "visual-system/routes/route-dotted-line.svg",
+      "type": "brand_asset",
+      "category": "route",
+      "name": "Route Dotted Line",
+      "description": "Route Dotted Line — route asset",
+      "tags": [
+        "route",
+        "brand",
+        "official"
+      ],
+      "usage": [],
+      "priority": 6,
+      "status": "active"
+    },
+    {
+      "id": "visual-system/routes_route_network",
+      "path": "visual-system/routes/route-network.svg",
+      "type": "brand_asset",
+      "category": "route",
+      "name": "Route Network",
+      "description": "Route Network — route asset",
+      "tags": [
+        "route",
+        "brand",
+        "official"
+      ],
+      "usage": [],
+      "priority": 6,
+      "status": "active"
+    },
+    {
+      "id": "visual-system/routes_route_straight_segments",
+      "path": "visual-system/routes/route-straight-segments.svg",
+      "type": "brand_asset",
+      "category": "route",
+      "name": "Route Straight Segments",
+      "description": "Route Straight Segments — route asset",
+      "tags": [
+        "route",
+        "brand",
+        "official"
+      ],
+      "usage": [],
+      "priority": 6,
+      "status": "active"
+    },
+    {
+      "id": "visual-system/routes_route_with_waypoints",
+      "path": "visual-system/routes/route-with-waypoints.svg",
+      "type": "brand_asset",
+      "category": "route",
+      "name": "Route With Waypoints",
+      "description": "Route With Waypoints — route asset",
+      "tags": [
+        "route",
+        "brand",
+        "official"
+      ],
+      "usage": [],
+      "priority": 6,
+      "status": "active"
+    },
+    {
+      "id": "contact-sheets_contact_sheet_flyers",
+      "path": "contact-sheets/contact-sheet-flyers.jpg",
       "type": "unknown",
       "category": "other",
-      "name": "Route Line",
-      "description": "Route Line — other asset",
+      "name": "Contact Sheet Flyers",
+      "description": "Contact Sheet Flyers — other asset",
       "tags": [
         "other"
       ],
@@ -186,12 +418,26 @@
       "status": "active"
     },
     {
-      "id": "brand/symbols_waypoint_dot",
-      "path": "brand/symbols/waypoint-dot.svg",
+      "id": "contact-sheets_contact_sheet_posters",
+      "path": "contact-sheets/contact-sheet-posters.jpg",
       "type": "unknown",
       "category": "other",
-      "name": "Waypoint Dot",
-      "description": "Waypoint Dot — other asset",
+      "name": "Contact Sheet Posters",
+      "description": "Contact Sheet Posters — other asset",
+      "tags": [
+        "other"
+      ],
+      "usage": [],
+      "priority": 5,
+      "status": "active"
+    },
+    {
+      "id": "contact-sheets_contact_sheet_social",
+      "path": "contact-sheets/contact-sheet-social.jpg",
+      "type": "unknown",
+      "category": "other",
+      "name": "Contact Sheet Social",
+      "description": "Contact Sheet Social — other asset",
       "tags": [
         "other"
       ],
@@ -202,12 +448,14 @@
     {
       "id": "projects_logo",
       "path": "projects/logo.svg",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "project",
       "name": "Logo",
-      "description": "Logo — other asset",
+      "description": "Logo — project asset",
       "tags": [
-        "other"
+        "project",
+        "brand",
+        "official"
       ],
       "usage": [],
       "priority": 5,
@@ -216,12 +464,13 @@
     {
       "id": "references/corporate_corporate_internal_comms_branding_design_projects____photos,_videos,_logos,_illustrations_and_branding",
       "path": "references/corporate/Corporate Internal Comms Branding Design Projects __ Photos, videos, logos, illustrations and branding.jfif",
-      "type": "unknown",
-      "category": "other",
+      "type": "creative_reference",
+      "category": "corporate",
       "name": "Corporate Internal Comms Branding Design Projects    Photos, Videos, Logos, Illustrations And Branding",
-      "description": "Corporate Internal Comms Branding Design Projects    Photos, Videos, Logos, Illustrations And Branding — other asset",
+      "description": "Corporate Internal Comms Branding Design Projects    Photos, Videos, Logos, Illustrations And Branding — corporate asset",
       "tags": [
-        "other"
+        "corporate",
+        "reference"
       ],
       "usage": [],
       "priority": 5,
@@ -230,12 +479,13 @@
     {
       "id": "references/corporate_tanmeiah_office",
       "path": "references/corporate/Tanmeiah Office.jfif",
-      "type": "unknown",
-      "category": "other",
+      "type": "creative_reference",
+      "category": "corporate",
       "name": "Tanmeiah Office",
-      "description": "Tanmeiah Office — other asset",
+      "description": "Tanmeiah Office — corporate asset",
       "tags": [
-        "other"
+        "corporate",
+        "reference"
       ],
       "usage": [],
       "priority": 5,
@@ -244,12 +494,13 @@
     {
       "id": "references/flyers_banner_design",
       "path": "references/flyers/Banner Design.jfif",
-      "type": "unknown",
-      "category": "other",
+      "type": "creative_reference",
+      "category": "flyer",
       "name": "Banner Design",
-      "description": "Banner Design — other asset",
+      "description": "Banner Design — flyer asset",
       "tags": [
-        "other"
+        "flyer",
+        "reference"
       ],
       "usage": [],
       "priority": 5,
@@ -258,12 +509,13 @@
     {
       "id": "references/flyers_church_flyer_design",
       "path": "references/flyers/Church Flyer Design.jfif",
-      "type": "unknown",
-      "category": "other",
+      "type": "creative_reference",
+      "category": "flyer",
       "name": "Church Flyer Design",
-      "description": "Church Flyer Design — other asset",
+      "description": "Church Flyer Design — flyer asset",
       "tags": [
-        "other"
+        "flyer",
+        "reference"
       ],
       "usage": [],
       "priority": 5,
@@ -272,12 +524,13 @@
     {
       "id": "references/flyers_corporate_business_flyer_template_ai,_psd,_eps",
       "path": "references/flyers/Corporate Business Flyer Template AI, PSD, EPS.jfif",
-      "type": "unknown",
-      "category": "other",
+      "type": "creative_reference",
+      "category": "flyer",
       "name": "Corporate Business Flyer Template Ai, Psd, Eps",
-      "description": "Corporate Business Flyer Template Ai, Psd, Eps — other asset",
+      "description": "Corporate Business Flyer Template Ai, Psd, Eps — flyer asset",
       "tags": [
-        "other"
+        "flyer",
+        "reference"
       ],
       "usage": [],
       "priority": 5,
@@ -286,12 +539,13 @@
     {
       "id": "references/flyers_creative_business_agency_flyer_design___modern_corporate_poster_template_as_a_sample",
       "path": "references/flyers/Creative Business Agency Flyer Design _ Modern Corporate Poster Template as a sample.jfif",
-      "type": "unknown",
-      "category": "other",
+      "type": "creative_reference",
+      "category": "flyer",
       "name": "Creative Business Agency Flyer Design   Modern Corporate Poster Template As A Sample",
-      "description": "Creative Business Agency Flyer Design   Modern Corporate Poster Template As A Sample — other asset",
+      "description": "Creative Business Agency Flyer Design   Modern Corporate Poster Template As A Sample — flyer asset",
       "tags": [
-        "other"
+        "flyer",
+        "reference"
       ],
       "usage": [],
       "priority": 5,
@@ -300,12 +554,13 @@
     {
       "id": "references/flyers_creative_studio_flyer",
       "path": "references/flyers/Creative Studio Flyer.jfif",
-      "type": "unknown",
-      "category": "other",
+      "type": "creative_reference",
+      "category": "flyer",
       "name": "Creative Studio Flyer",
-      "description": "Creative Studio Flyer — other asset",
+      "description": "Creative Studio Flyer — flyer asset",
       "tags": [
-        "other"
+        "flyer",
+        "reference"
       ],
       "usage": [],
       "priority": 5,
@@ -314,12 +569,13 @@
     {
       "id": "references/flyers_digital_business_marketing_company_flyer_psd",
       "path": "references/flyers/Digital Business Marketing Company Flyer PSD.jfif",
-      "type": "unknown",
-      "category": "other",
+      "type": "creative_reference",
+      "category": "flyer",
       "name": "Digital Business Marketing Company Flyer Psd",
-      "description": "Digital Business Marketing Company Flyer Psd — other asset",
+      "description": "Digital Business Marketing Company Flyer Psd — flyer asset",
       "tags": [
-        "other"
+        "flyer",
+        "reference"
       ],
       "usage": [],
       "priority": 5,
@@ -328,12 +584,13 @@
     {
       "id": "references/flyers_e_flyer_design",
       "path": "references/flyers/E-FLYER DESIGN.jfif",
-      "type": "unknown",
-      "category": "other",
+      "type": "creative_reference",
+      "category": "flyer",
       "name": "E Flyer Design",
-      "description": "E Flyer Design — other asset",
+      "description": "E Flyer Design — flyer asset",
       "tags": [
-        "other"
+        "flyer",
+        "reference"
       ],
       "usage": [],
       "priority": 5,
@@ -342,12 +599,13 @@
     {
       "id": "references/flyers_i_will_design_your_business_flyer",
       "path": "references/flyers/I will design your business flyer.jfif",
-      "type": "unknown",
-      "category": "other",
+      "type": "creative_reference",
+      "category": "flyer",
       "name": "I Will Design Your Business Flyer",
-      "description": "I Will Design Your Business Flyer — other asset",
+      "description": "I Will Design Your Business Flyer — flyer asset",
       "tags": [
-        "other"
+        "flyer",
+        "reference"
       ],
       "usage": [],
       "priority": 5,
@@ -356,12 +614,13 @@
     {
       "id": "references/flyers_professional_consulting_flyer___ai_free_download___pikbest",
       "path": "references/flyers/Professional Consulting Flyer _ AI Free Download - Pikbest.jfif",
-      "type": "unknown",
-      "category": "other",
+      "type": "creative_reference",
+      "category": "flyer",
       "name": "Professional Consulting Flyer   Ai Free Download   Pikbest",
-      "description": "Professional Consulting Flyer   Ai Free Download   Pikbest — other asset",
+      "description": "Professional Consulting Flyer   Ai Free Download   Pikbest — flyer asset",
       "tags": [
-        "other"
+        "flyer",
+        "reference"
       ],
       "usage": [],
       "priority": 5,
@@ -370,12 +629,13 @@
     {
       "id": "references/flyers_registration_flyer",
       "path": "references/flyers/Registration flyer.jfif",
-      "type": "unknown",
-      "category": "other",
+      "type": "creative_reference",
+      "category": "flyer",
       "name": "Registration Flyer",
-      "description": "Registration Flyer — other asset",
+      "description": "Registration Flyer — flyer asset",
       "tags": [
-        "other"
+        "flyer",
+        "reference"
       ],
       "usage": [],
       "priority": 5,
@@ -384,12 +644,13 @@
     {
       "id": "references/flyers_youth_service_church_flyer_design",
       "path": "references/flyers/Youth Service Church flyer Design.jfif",
-      "type": "unknown",
-      "category": "other",
+      "type": "creative_reference",
+      "category": "flyer",
       "name": "Youth Service Church Flyer Design",
-      "description": "Youth Service Church Flyer Design — other asset",
+      "description": "Youth Service Church Flyer Design — flyer asset",
       "tags": [
-        "other"
+        "flyer",
+        "reference"
       ],
       "usage": [],
       "priority": 5,
@@ -398,12 +659,13 @@
     {
       "id": "references/posters_batch_poster",
       "path": "references/posters/batch poster.jfif",
-      "type": "unknown",
-      "category": "other",
+      "type": "creative_reference",
+      "category": "poster",
       "name": "Batch Poster",
-      "description": "Batch Poster — other asset",
+      "description": "Batch Poster — poster asset",
       "tags": [
-        "other"
+        "poster",
+        "reference"
       ],
       "usage": [],
       "priority": 5,
@@ -412,12 +674,13 @@
     {
       "id": "references/posters_church_poster",
       "path": "references/posters/Church poster.jfif",
-      "type": "unknown",
-      "category": "other",
+      "type": "creative_reference",
+      "category": "poster",
       "name": "Church Poster",
-      "description": "Church Poster — other asset",
+      "description": "Church Poster — poster asset",
       "tags": [
-        "other"
+        "poster",
+        "reference"
       ],
       "usage": [],
       "priority": 5,
@@ -426,12 +689,13 @@
     {
       "id": "references/posters_poster_design_(1)",
       "path": "references/posters/Poster Design (1).jfif",
-      "type": "unknown",
-      "category": "other",
+      "type": "creative_reference",
+      "category": "poster",
       "name": "Poster Design (1)",
-      "description": "Poster Design (1) — other asset",
+      "description": "Poster Design (1) — poster asset",
       "tags": [
-        "other"
+        "poster",
+        "reference"
       ],
       "usage": [],
       "priority": 5,
@@ -440,12 +704,13 @@
     {
       "id": "references/posters_sunday_service",
       "path": "references/posters/SUNDAY SERVICE.jfif",
-      "type": "unknown",
-      "category": "other",
+      "type": "creative_reference",
+      "category": "poster",
       "name": "Sunday Service",
-      "description": "Sunday Service — other asset",
+      "description": "Sunday Service — poster asset",
       "tags": [
-        "other"
+        "poster",
+        "reference"
       ],
       "usage": [],
       "priority": 5,
@@ -454,12 +719,13 @@
     {
       "id": "references/posters_tedx_landmark_university_date_reveal_design",
       "path": "references/posters/TEDx Landmark University Date Reveal Design.jfif",
-      "type": "unknown",
-      "category": "other",
+      "type": "creative_reference",
+      "category": "poster",
       "name": "Tedx Landmark University Date Reveal Design",
-      "description": "Tedx Landmark University Date Reveal Design — other asset",
+      "description": "Tedx Landmark University Date Reveal Design — poster asset",
       "tags": [
-        "other"
+        "poster",
+        "reference"
       ],
       "usage": [],
       "priority": 5,
@@ -468,12 +734,13 @@
     {
       "id": "references/posters_thank_you_poster",
       "path": "references/posters/Thank you poster.jfif",
-      "type": "unknown",
-      "category": "other",
+      "type": "creative_reference",
+      "category": "poster",
       "name": "Thank You Poster",
-      "description": "Thank You Poster — other asset",
+      "description": "Thank You Poster — poster asset",
       "tags": [
-        "other"
+        "poster",
+        "reference"
       ],
       "usage": [],
       "priority": 5,
@@ -482,12 +749,13 @@
     {
       "id": "references/social_church_social_media_flyers_design___aziable_josue",
       "path": "references/social/Church Social Media flyers design - Aziable Josue.jfif",
-      "type": "unknown",
-      "category": "other",
+      "type": "creative_reference",
+      "category": "social",
       "name": "Church Social Media Flyers Design   Aziable Josue",
-      "description": "Church Social Media Flyers Design   Aziable Josue — other asset",
+      "description": "Church Social Media Flyers Design   Aziable Josue — social asset",
       "tags": [
-        "other"
+        "social",
+        "reference"
       ],
       "usage": [],
       "priority": 5,
@@ -496,12 +764,13 @@
     {
       "id": "references/social_contabilidade_assessoria_contábil_especial_para_mei_social_media_psd_editável_—_designi",
       "path": "references/social/Contabilidade Assessoria Contábil Especial para Mei Social Media PSD Editável — Designi.jfif",
-      "type": "unknown",
-      "category": "other",
+      "type": "creative_reference",
+      "category": "social",
       "name": "Contabilidade Assessoria Contábil Especial Para Mei Social Media Psd Editável — Designi",
-      "description": "Contabilidade Assessoria Contábil Especial Para Mei Social Media Psd Editável — Designi — other asset",
+      "description": "Contabilidade Assessoria Contábil Especial Para Mei Social Media Psd Editável — Designi — social asset",
       "tags": [
-        "other"
+        "social",
+        "reference"
       ],
       "usage": [],
       "priority": 5,
@@ -510,12 +779,13 @@
     {
       "id": "references/social_pr_social_ad_flyers_for_essence_academy,_figma___canva___photoshop___social_ad_design,_flyers_3",
       "path": "references/social/Pr Social Ad flyers for Essence Academy, Figma _ Canva _ Photoshop _ Social ad design, flyers 3.jfif",
-      "type": "unknown",
-      "category": "other",
+      "type": "creative_reference",
+      "category": "social",
       "name": "Pr Social Ad Flyers For Essence Academy, Figma   Canva   Photoshop   Social Ad Design, Flyers 3",
-      "description": "Pr Social Ad Flyers For Essence Academy, Figma   Canva   Photoshop   Social Ad Design, Flyers 3 — other asset",
+      "description": "Pr Social Ad Flyers For Essence Academy, Figma   Canva   Photoshop   Social Ad Design, Flyers 3 — social asset",
       "tags": [
-        "other"
+        "social",
+        "reference"
       ],
       "usage": [],
       "priority": 5,
@@ -524,12 +794,13 @@
     {
       "id": "references/social_⏳_10_days_to_go",
       "path": "references/social/⏳ 10 Days to Go.jfif",
-      "type": "unknown",
-      "category": "other",
+      "type": "creative_reference",
+      "category": "social",
       "name": "⏳ 10 Days To Go",
-      "description": "⏳ 10 Days To Go — other asset",
+      "description": "⏳ 10 Days To Go — social asset",
       "tags": [
-        "other"
+        "social",
+        "reference"
       ],
       "usage": [],
       "priority": 5,
@@ -594,12 +865,13 @@
     {
       "id": "templates/marketing_business_magazine_cover_template",
       "path": "templates/marketing/Business Magazine Cover Template.jfif",
-      "type": "unknown",
-      "category": "other",
+      "type": "creative_reference",
+      "category": "marketing_template",
       "name": "Business Magazine Cover Template",
-      "description": "Business Magazine Cover Template — other asset",
+      "description": "Business Magazine Cover Template — marketing_template asset",
       "tags": [
-        "other"
+        "marketing_template",
+        "reference"
       ],
       "usage": [],
       "priority": 5,
@@ -608,12 +880,13 @@
     {
       "id": "templates/marketing_e_commerce_des_produits_digitaux",
       "path": "templates/marketing/e-commerce des produits digitaux.jfif",
-      "type": "unknown",
-      "category": "other",
+      "type": "creative_reference",
+      "category": "marketing_template",
       "name": "E Commerce Des Produits Digitaux",
-      "description": "E Commerce Des Produits Digitaux — other asset",
+      "description": "E Commerce Des Produits Digitaux — marketing_template asset",
       "tags": [
-        "other"
+        "marketing_template",
+        "reference"
       ],
       "usage": [],
       "priority": 5,
@@ -622,12 +895,13 @@
     {
       "id": "templates/posters_for_sure_affiche_pour_éviter_les_gens_à_investir_dans_la_communication_visuelle",
       "path": "templates/posters/For sure affiche pour éviter les gens à investir dans la communication visuelle.jfif",
-      "type": "unknown",
-      "category": "other",
+      "type": "creative_reference",
+      "category": "poster_template",
       "name": "For Sure Affiche Pour Éviter Les Gens À Investir Dans La Communication Visuelle",
-      "description": "For Sure Affiche Pour Éviter Les Gens À Investir Dans La Communication Visuelle — other asset",
+      "description": "For Sure Affiche Pour Éviter Les Gens À Investir Dans La Communication Visuelle — poster_template asset",
       "tags": [
-        "other"
+        "poster_template",
+        "reference"
       ],
       "usage": [],
       "priority": 5,
@@ -636,12 +910,13 @@
     {
       "id": "templates/posters_jawatan_kosong",
       "path": "templates/posters/JAWATAN KOSONG.jfif",
-      "type": "unknown",
-      "category": "other",
+      "type": "creative_reference",
+      "category": "poster_template",
       "name": "Jawatan Kosong",
-      "description": "Jawatan Kosong — other asset",
+      "description": "Jawatan Kosong — poster_template asset",
       "tags": [
-        "other"
+        "poster_template",
+        "reference"
       ],
       "usage": [],
       "priority": 5,
@@ -650,12 +925,13 @@
     {
       "id": "templates/posters_poster_design",
       "path": "templates/posters/POSTER DESIGN.jfif",
-      "type": "unknown",
-      "category": "other",
+      "type": "creative_reference",
+      "category": "poster_template",
       "name": "Poster Design",
-      "description": "Poster Design — other asset",
+      "description": "Poster Design — poster_template asset",
       "tags": [
-        "other"
+        "poster_template",
+        "reference"
       ],
       "usage": [],
       "priority": 5,
@@ -664,12 +940,13 @@
     {
       "id": "templates_company_policy_layout",
       "path": "templates/Company Policy Layout.jfif",
-      "type": "unknown",
-      "category": "other",
+      "type": "creative_reference",
+      "category": "template",
       "name": "Company Policy Layout",
-      "description": "Company Policy Layout — other asset",
+      "description": "Company Policy Layout — template asset",
       "tags": [
-        "other"
+        "template",
+        "reference"
       ],
       "usage": [],
       "priority": 5,
@@ -678,12 +955,13 @@
     {
       "id": "templates_diseño_presentación_personaje_pastor",
       "path": "templates/Diseño Presentación Personaje Pastor.jfif",
-      "type": "unknown",
-      "category": "other",
+      "type": "creative_reference",
+      "category": "template",
       "name": "Diseño Presentación Personaje Pastor",
-      "description": "Diseño Presentación Personaje Pastor — other asset",
+      "description": "Diseño Presentación Personaje Pastor — template asset",
       "tags": [
-        "other"
+        "template",
+        "reference"
       ],
       "usage": [],
       "priority": 5,
@@ -692,68 +970,13 @@
     {
       "id": "templates_recruitment_&_consulting_",
       "path": "templates/Recruitment & Consulting_.jfif",
-      "type": "unknown",
-      "category": "other",
+      "type": "creative_reference",
+      "category": "template",
       "name": "Recruitment & Consulting ",
-      "description": "Recruitment & Consulting  — other asset",
+      "description": "Recruitment & Consulting  — template asset",
       "tags": [
-        "other"
-      ],
-      "usage": [],
-      "priority": 5,
-      "status": "active"
-    },
-    {
-      "id": "visual-system/africa-map_africa_map_isometric_3d",
-      "path": "visual-system/africa-map/africa-map-isometric-3d.jfif",
-      "type": "unknown",
-      "category": "other",
-      "name": "Africa Map Isometric 3D",
-      "description": "Africa Map Isometric 3D — other asset",
-      "tags": [
-        "other"
-      ],
-      "usage": [],
-      "priority": 5,
-      "status": "active"
-    },
-    {
-      "id": "visual-system/africa-map_africa_map_vector_black_white",
-      "path": "visual-system/africa-map/africa-map-vector-black-white.jfif",
-      "type": "unknown",
-      "category": "other",
-      "name": "Africa Map Vector Black White",
-      "description": "Africa Map Vector Black White — other asset",
-      "tags": [
-        "other"
-      ],
-      "usage": [],
-      "priority": 5,
-      "status": "active"
-    },
-    {
-      "id": "visual-system/compass_compass_design_reference_01",
-      "path": "visual-system/compass/compass-design-reference-01.jfif",
-      "type": "unknown",
-      "category": "other",
-      "name": "Compass Design Reference 01",
-      "description": "Compass Design Reference 01 — other asset",
-      "tags": [
-        "other"
-      ],
-      "usage": [],
-      "priority": 5,
-      "status": "active"
-    },
-    {
-      "id": "visual-system/compass_compass_design_reference_02",
-      "path": "visual-system/compass/compass-design-reference-02.jfif",
-      "type": "unknown",
-      "category": "other",
-      "name": "Compass Design Reference 02",
-      "description": "Compass Design Reference 02 — other asset",
-      "tags": [
-        "other"
+        "template",
+        "reference"
       ],
       "usage": [],
       "priority": 5,
@@ -762,12 +985,14 @@
     {
       "id": "visual-system/coordinates_coordinates_compass_rose",
       "path": "visual-system/coordinates/coordinates-compass-rose.svg",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "coordinate",
       "name": "Coordinates Compass Rose",
-      "description": "Coordinates Compass Rose — other asset",
+      "description": "Coordinates Compass Rose — coordinate asset",
       "tags": [
-        "other"
+        "coordinate",
+        "brand",
+        "official"
       ],
       "usage": [],
       "priority": 5,
@@ -776,12 +1001,14 @@
     {
       "id": "visual-system/coordinates_coordinates_crosshair",
       "path": "visual-system/coordinates/coordinates-crosshair.svg",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "coordinate",
       "name": "Coordinates Crosshair",
-      "description": "Coordinates Crosshair — other asset",
+      "description": "Coordinates Crosshair — coordinate asset",
       "tags": [
-        "other"
+        "coordinate",
+        "brand",
+        "official"
       ],
       "usage": [],
       "priority": 5,
@@ -790,12 +1017,14 @@
     {
       "id": "visual-system/coordinates_coordinates_degree_marks",
       "path": "visual-system/coordinates/coordinates-degree-marks.svg",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "coordinate",
       "name": "Coordinates Degree Marks",
-      "description": "Coordinates Degree Marks — other asset",
+      "description": "Coordinates Degree Marks — coordinate asset",
       "tags": [
-        "other"
+        "coordinate",
+        "brand",
+        "official"
       ],
       "usage": [],
       "priority": 5,
@@ -804,12 +1033,14 @@
     {
       "id": "visual-system/coordinates_coordinates_full_system",
       "path": "visual-system/coordinates/coordinates-full-system.svg",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "coordinate",
       "name": "Coordinates Full System",
-      "description": "Coordinates Full System — other asset",
+      "description": "Coordinates Full System — coordinate asset",
       "tags": [
-        "other"
+        "coordinate",
+        "brand",
+        "official"
       ],
       "usage": [],
       "priority": 5,
@@ -818,12 +1049,14 @@
     {
       "id": "visual-system/coordinates_coordinates_lat_long_lines",
       "path": "visual-system/coordinates/coordinates-lat-long-lines.svg",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "coordinate",
       "name": "Coordinates Lat Long Lines",
-      "description": "Coordinates Lat Long Lines — other asset",
+      "description": "Coordinates Lat Long Lines — coordinate asset",
       "tags": [
-        "other"
+        "coordinate",
+        "brand",
+        "official"
       ],
       "usage": [],
       "priority": 5,
@@ -832,12 +1065,14 @@
     {
       "id": "visual-system/coordinates_coordinates_marker_a",
       "path": "visual-system/coordinates/coordinates-marker-A.svg",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "coordinate",
       "name": "Coordinates Marker A",
-      "description": "Coordinates Marker A — other asset",
+      "description": "Coordinates Marker A — coordinate asset",
       "tags": [
-        "other"
+        "coordinate",
+        "brand",
+        "official"
       ],
       "usage": [],
       "priority": 5,
@@ -846,12 +1081,14 @@
     {
       "id": "visual-system/coordinates_coordinates_marker_b",
       "path": "visual-system/coordinates/coordinates-marker-B.svg",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "coordinate",
       "name": "Coordinates Marker B",
-      "description": "Coordinates Marker B — other asset",
+      "description": "Coordinates Marker B — coordinate asset",
       "tags": [
-        "other"
+        "coordinate",
+        "brand",
+        "official"
       ],
       "usage": [],
       "priority": 5,
@@ -860,12 +1097,14 @@
     {
       "id": "visual-system/grids_grid_blueprint_style",
       "path": "visual-system/grids/grid-blueprint-style.svg",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "grid",
       "name": "Grid Blueprint Style",
-      "description": "Grid Blueprint Style — other asset",
+      "description": "Grid Blueprint Style — grid asset",
       "tags": [
-        "other"
+        "grid",
+        "brand",
+        "official"
       ],
       "usage": [],
       "priority": 5,
@@ -874,12 +1113,14 @@
     {
       "id": "visual-system/grids_grid_cartesian_bold",
       "path": "visual-system/grids/grid-cartesian-bold.svg",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "grid",
       "name": "Grid Cartesian Bold",
-      "description": "Grid Cartesian Bold — other asset",
+      "description": "Grid Cartesian Bold — grid asset",
       "tags": [
-        "other"
+        "grid",
+        "brand",
+        "official"
       ],
       "usage": [],
       "priority": 5,
@@ -888,12 +1129,14 @@
     {
       "id": "visual-system/grids_grid_cartesian_light",
       "path": "visual-system/grids/grid-cartesian-light.svg",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "grid",
       "name": "Grid Cartesian Light",
-      "description": "Grid Cartesian Light — other asset",
+      "description": "Grid Cartesian Light — grid asset",
       "tags": [
-        "other"
+        "grid",
+        "brand",
+        "official"
       ],
       "usage": [],
       "priority": 5,
@@ -902,12 +1145,14 @@
     {
       "id": "visual-system/grids_grid_coordinate_overlay",
       "path": "visual-system/grids/grid-coordinate-overlay.svg",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "grid",
       "name": "Grid Coordinate Overlay",
-      "description": "Grid Coordinate Overlay — other asset",
+      "description": "Grid Coordinate Overlay — grid asset",
       "tags": [
-        "other"
+        "grid",
+        "brand",
+        "official"
       ],
       "usage": [],
       "priority": 5,
@@ -916,12 +1161,14 @@
     {
       "id": "visual-system/grids_grid_dots_pattern",
       "path": "visual-system/grids/grid-dots-pattern.svg",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "grid",
       "name": "Grid Dots Pattern",
-      "description": "Grid Dots Pattern — other asset",
+      "description": "Grid Dots Pattern — grid asset",
       "tags": [
-        "other"
+        "grid",
+        "brand",
+        "official"
       ],
       "usage": [],
       "priority": 5,
@@ -930,12 +1177,14 @@
     {
       "id": "visual-system/grids_grid_hexagonal",
       "path": "visual-system/grids/grid-hexagonal.svg",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "grid",
       "name": "Grid Hexagonal",
-      "description": "Grid Hexagonal — other asset",
+      "description": "Grid Hexagonal — grid asset",
       "tags": [
-        "other"
+        "grid",
+        "brand",
+        "official"
       ],
       "usage": [],
       "priority": 5,
@@ -944,12 +1193,14 @@
     {
       "id": "visual-system/grids_grid_isometric",
       "path": "visual-system/grids/grid-isometric.svg",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "grid",
       "name": "Grid Isometric",
-      "description": "Grid Isometric — other asset",
+      "description": "Grid Isometric — grid asset",
       "tags": [
-        "other"
+        "grid",
+        "brand",
+        "official"
       ],
       "usage": [],
       "priority": 5,
@@ -958,12 +1209,14 @@
     {
       "id": "visual-system/patterns_pattern_africa_outlines",
       "path": "visual-system/patterns/pattern-africa-outlines.svg",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "pattern",
       "name": "Pattern Africa Outlines",
-      "description": "Pattern Africa Outlines — other asset",
+      "description": "Pattern Africa Outlines — pattern asset",
       "tags": [
-        "other"
+        "pattern",
+        "brand",
+        "official"
       ],
       "usage": [],
       "priority": 5,
@@ -972,12 +1225,14 @@
     {
       "id": "visual-system/patterns_pattern_compass_repeat",
       "path": "visual-system/patterns/pattern-compass-repeat.svg",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "pattern",
       "name": "Pattern Compass Repeat",
-      "description": "Pattern Compass Repeat — other asset",
+      "description": "Pattern Compass Repeat — pattern asset",
       "tags": [
-        "other"
+        "pattern",
+        "brand",
+        "official"
       ],
       "usage": [],
       "priority": 5,
@@ -986,12 +1241,14 @@
     {
       "id": "visual-system/patterns_pattern_dots_grid",
       "path": "visual-system/patterns/pattern-dots-grid.svg",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "pattern",
       "name": "Pattern Dots Grid",
-      "description": "Pattern Dots Grid — other asset",
+      "description": "Pattern Dots Grid — pattern asset",
       "tags": [
-        "other"
+        "pattern",
+        "brand",
+        "official"
       ],
       "usage": [],
       "priority": 5,
@@ -1000,12 +1257,14 @@
     {
       "id": "visual-system/patterns_pattern_geometric_triangles",
       "path": "visual-system/patterns/pattern-geometric-triangles.svg",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "pattern",
       "name": "Pattern Geometric Triangles",
-      "description": "Pattern Geometric Triangles — other asset",
+      "description": "Pattern Geometric Triangles — pattern asset",
       "tags": [
-        "other"
+        "pattern",
+        "brand",
+        "official"
       ],
       "usage": [],
       "priority": 5,
@@ -1014,12 +1273,14 @@
     {
       "id": "visual-system/patterns_pattern_hexagons",
       "path": "visual-system/patterns/pattern-hexagons.svg",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "pattern",
       "name": "Pattern Hexagons",
-      "description": "Pattern Hexagons — other asset",
+      "description": "Pattern Hexagons — pattern asset",
       "tags": [
-        "other"
+        "pattern",
+        "brand",
+        "official"
       ],
       "usage": [],
       "priority": 5,
@@ -1028,12 +1289,14 @@
     {
       "id": "visual-system/patterns_pattern_lines_diagonal",
       "path": "visual-system/patterns/pattern-lines-diagonal.svg",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "pattern",
       "name": "Pattern Lines Diagonal",
-      "description": "Pattern Lines Diagonal — other asset",
+      "description": "Pattern Lines Diagonal — pattern asset",
       "tags": [
-        "other"
+        "pattern",
+        "brand",
+        "official"
       ],
       "usage": [],
       "priority": 5,
@@ -1042,110 +1305,14 @@
     {
       "id": "visual-system/patterns_pattern_waves_navigation",
       "path": "visual-system/patterns/pattern-waves-navigation.svg",
-      "type": "unknown",
-      "category": "other",
+      "type": "brand_asset",
+      "category": "pattern",
       "name": "Pattern Waves Navigation",
-      "description": "Pattern Waves Navigation — other asset",
+      "description": "Pattern Waves Navigation — pattern asset",
       "tags": [
-        "other"
-      ],
-      "usage": [],
-      "priority": 5,
-      "status": "active"
-    },
-    {
-      "id": "visual-system/routes_route_animated_path",
-      "path": "visual-system/routes/route-animated-path.svg",
-      "type": "unknown",
-      "category": "other",
-      "name": "Route Animated Path",
-      "description": "Route Animated Path — other asset",
-      "tags": [
-        "other"
-      ],
-      "usage": [],
-      "priority": 5,
-      "status": "active"
-    },
-    {
-      "id": "visual-system/routes_route_curved_01",
-      "path": "visual-system/routes/route-curved-01.svg",
-      "type": "unknown",
-      "category": "other",
-      "name": "Route Curved 01",
-      "description": "Route Curved 01 — other asset",
-      "tags": [
-        "other"
-      ],
-      "usage": [],
-      "priority": 5,
-      "status": "active"
-    },
-    {
-      "id": "visual-system/routes_route_curved_02",
-      "path": "visual-system/routes/route-curved-02.svg",
-      "type": "unknown",
-      "category": "other",
-      "name": "Route Curved 02",
-      "description": "Route Curved 02 — other asset",
-      "tags": [
-        "other"
-      ],
-      "usage": [],
-      "priority": 5,
-      "status": "active"
-    },
-    {
-      "id": "visual-system/routes_route_dotted_line",
-      "path": "visual-system/routes/route-dotted-line.svg",
-      "type": "unknown",
-      "category": "other",
-      "name": "Route Dotted Line",
-      "description": "Route Dotted Line — other asset",
-      "tags": [
-        "other"
-      ],
-      "usage": [],
-      "priority": 5,
-      "status": "active"
-    },
-    {
-      "id": "visual-system/routes_route_network",
-      "path": "visual-system/routes/route-network.svg",
-      "type": "unknown",
-      "category": "other",
-      "name": "Route Network",
-      "description": "Route Network — other asset",
-      "tags": [
-        "other"
-      ],
-      "usage": [],
-      "priority": 5,
-      "status": "active"
-    },
-    {
-      "id": "visual-system/routes_route_straight_segments",
-      "path": "visual-system/routes/route-straight-segments.svg",
-      "type": "unknown",
-      "category": "other",
-      "name": "Route Straight Segments",
-      "description": "Route Straight Segments — other asset",
-      "tags": [
-        "other"
-      ],
-      "usage": [],
-      "priority": 5,
-      "status": "active"
-    },
-    {
-      "id": "visual-system/routes_route_with_waypoints",
-      "path": "visual-system/routes/route-with-waypoints.svg",
-      "type": "unknown",
-      "category": "other",
-      "name": "Route With Waypoints",
-      "description": "Route With Waypoints — other asset",
-      "tags": [
-        "other"
+        "pattern",
+        "brand",
+        "official"
       ],
       "usage": [],
       "priority": 5,

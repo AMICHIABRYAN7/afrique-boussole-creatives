@@ -45,6 +45,11 @@ ASSET_TYPE_MAPPING = {
     'references/advertisements': {'type': 'creative_reference', 'category': 'advertisement'},
     'references/social': {'type': 'creative_reference', 'category': 'social'},
     'references/photography': {'type': 'creative_reference', 'category': 'photography'},
+    'references/corporate': {'type': 'creative_reference', 'category': 'corporate'},
+    'templates/posters': {'type': 'creative_reference', 'category': 'poster_template'},
+    'templates/marketing': {'type': 'creative_reference', 'category': 'marketing_template'},
+    'templates': {'type': 'creative_reference', 'category': 'template'},
+    'projects': {'type': 'brand_asset', 'category': 'project'},
     'team': {'type': 'source_image', 'category': 'team'},
     'archive': {'type': 'archive_asset', 'category': 'archive'},
 }
@@ -101,12 +106,16 @@ def get_asset_metadata(file_path, relative_path):
     filename = os.path.basename(file_path)
     folder_path = os.path.dirname(relative_path)
     
+    # Normalize paths for comparison (use forward slashes)
+    folder_path_normalized = folder_path.replace('\\', '/')
+    
     # Determine type and category
     asset_type = 'unknown'
     category = 'other'
     
+    # Try exact match first, then partial match
     for path_pattern, meta in ASSET_TYPE_MAPPING.items():
-        if path_pattern.replace('/', os.sep) in folder_path.replace('\\', os.sep):
+        if path_pattern in folder_path_normalized or folder_path_normalized.startswith(path_pattern):
             asset_type = meta['type']
             category = meta['category']
             break
