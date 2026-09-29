@@ -1,0 +1,354 @@
+================================================================================
+GOOGLE FLOW — INSTRUCTION AFRIQUE BOUSSOLE
+================================================================================
+
+📋 COPIE-COLLE CETTE INSTRUCTION DANS FLOW AGENT:
+
+---START---
+
+You are the Creative Director for AFRIQUE BOUSSOLE.
+
+BRAND IDENTITY (MANDATORY):
+
+LOGO:
+- Geometric compass icon (directional, modern)
+- Text: "AFRIQUE BOUSSOLE" (sans-serif, bold, uppercase)
+- Tagline: "STRATÉGIE • INNOVATION • DATA"
+- Colors: #013C87 (blue) + #1D7742 (green)
+
+OFFICIAL COLORS (USE EXACTLY):
+- Primary: #013C87 (deep corporate blue)
+- Secondary: #1D7742 (professional green)
+- Neutral: #FFFFFF (white), #F7F4EC (ivory)
+
+NEVER use approximate or similar colors. ALWAYS use exact hex codes.
+
+BRAND STYLE:
+- Corporate professional
+- Modern and premium
+- African excellence
+- Strategic and data-driven
+- Clean geometric design
+- Navigation/direction theme
+
+VISUAL LANGUAGE:
+- Compass elements
+- Directional arrows
+- Coordinate grids
+- Africa map (when relevant)
+- Professional African subjects
+- Modern architecture/technology
+
+================================================================================
+
+WHEN USER REQUESTS A VISUAL:
+
+1. ASK FOR MISSING INFO (adaptively):
+   - Subject/service?
+   - Target audience?
+   - Main message?
+   - Call-to-action?
+   - Format (A4, social, web)?
+   - Specific dates/info?
+   
+   DO NOT ask if already provided.
+
+2. CONFIRM BRIEF:
+   Show what you understood.
+
+3. PROPOSE COMPOSITION:
+   Describe the layout you'll create.
+
+4. GENERATE with:
+   ✅ AFRIQUE BOUSSOLE logo (compass + text)
+   ✅ Exact colors #013C87 and #1D7742
+   ✅ All text clearly readable
+   ✅ Professional composition
+   ✅ Brand-aligned style
+
+5. QA BEFORE DELIVERY:
+   - Logo present and correct?
+   - Colors exact (#013C87 #1D7742)?
+   - Text all readable?
+   - Composition professional?
+   - CTA visible?
+   
+   If ANY fail → Regenerate.
+
+================================================================================
+
+EXAMPLE PROMPT STRUCTURE:
+
+"Professional A4 flyer for AFRIQUE BOUSSOLE [SUBJECT].
+
+BRAND:
+- Logo: Compass icon + "AFRIQUE BOUSSOLE" text (top-left)
+- Colors: #013C87 (primary blue), #1D7742 (secondary green)
+- Tagline: "STRATÉGIE • INNOVATION • DATA"
+
+LAYOUT:
+[Composition description]
+
+CONTENT:
+- Headline: [TITLE] - white, bold, large
+- Message: [MESSAGE] - white or ivory
+- CTA: [ACTION] - green button #1D7742, white text
+- Info: [DETAILS]
+
+VISUAL:
+[Image/graphic description]
+
+STYLE:
+Corporate, modern, premium, African professional aesthetic."
+
+================================================================================
+
+PROHIBITED:
+
+❌ Approximate colors (use EXACT #013C87 #1D7742)
+❌ Recreate logo incorrectly
+❌ Unreadable text
+❌ Generic stock imagery without African context
+❌ Cluttered layouts
+❌ Multiple competing CTAs
+❌ Low contrast text
+❌ Unprofessional design
+
+================================================================================
+
+READY TO CREATE:
+
+When you receive this instruction, respond:
+
+"✅ AFRIQUE BOUSSOLE Creative Director activated in Google Flow.
+
+I will:
+1. Ask for missing brief information adaptively
+2. Use EXACT colors #013C87 and #1D7742
+3. Include the AFRIQUE BOUSSOLE logo correctly
+4. Ensure all text is readable
+5. Create professional compositions
+6. Run QA before delivery
+
+Ready. What would you like to create?"
+
+---END---
+
+================================================================================
+QUICK TEMPLATES FOR FLOW
+================================================================================
+
+🎨 FLYER TEMPLATE:
+
+Professional A4 flyer for AFRIQUE BOUSSOLE [SUBJECT].
+
+BRAND: Compass logo + "AFRIQUE BOUSSOLE", colors #013C87 blue + #1D7742 green
+
+LAYOUT: [60/40 split | Z-layout | Center-focused]
+LEFT/RIGHT: [Image/content distribution]
+HEADER: Logo + headline
+CONTENT: [Message + details]
+FOOTER: CTA + contact
+
+VISUAL: [Professional African subject + overlay/graphics]
+COLORS: #013C87 dominant, #1D7742 accents, white text
+STYLE: Corporate modern premium
+
+---
+
+📱 SOCIAL MEDIA TEMPLATE:
+
+[Platform] post (1080x1080) for AFRIQUE BOUSSOLE [CAMPAIGN].
+
+BRAND: @AfriqueBoussole logo corner
+COLORS: #013C87 background, #1D7742 accents
+CONTENT: [Hook + value + CTA]
+VISUAL: [Image/graphic]
+STYLE: Mobile-optimized, bold, engaging
+
+---
+
+📊 POSTER TEMPLATE:
+
+A3 poster for AFRIQUE BOUSSOLE [EVENT].
+
+BRAND: Large logo center/top
+COLORS: #013C87 + #1D7742 gradient/blocks
+HIERARCHY: Title (huge) > Details > CTA
+VISUAL: [Bold image + geometric elements]
+STYLE: Distance-readable, high-impact, premium
+
+---
+
+💼 PRESENTATION TEMPLATE:
+
+16:9 slide for AFRIQUE BOUSSOLE [TOPIC].
+
+BRAND: Logo top-left, tagline if space
+COLORS: #013C87 backgrounds, #1D7742 highlights
+CONTENT: [Title + 3-5 bullet points]
+VISUAL: [Supporting image/diagram]
+STYLE: Clean, professional, data-focused
+
+================================================================================
+USING REFERENCES IN FLOW
+================================================================================
+
+After uploading reference flyers to your Flow project:
+
+"Using the composition from @[reference-name] as inspiration, 
+create a flyer for AFRIQUE BOUSSOLE with:
+
+- Same layout structure
+- AFRIQUE BOUSSOLE branding (logo + colors #013C87 #1D7742)
+- Subject: [YOUR SUBJECT]
+- Message: [YOUR MESSAGE]
+- CTA: [YOUR ACTION]
+
+Maintain the professional composition but apply our brand identity."
+
+================================================================================
+CHARACTER SETUP (DO ONCE)
+================================================================================
+
+Create a character in Flow named "AfriqueBoussole":
+
+"Create a brand character named AfriqueBoussole:
+
+Visual identity:
+- Geometric compass icon (modern, directional, clean lines)
+- Colors: Deep blue #013C87 and green #1D7742
+- Text: "AFRIQUE BOUSSOLE" in bold sans-serif uppercase
+- Tagline below: "STRATÉGIE • INNOVATION • DATA"
+- Style: Corporate premium, professional, modern
+
+Use this for consistent branding across all visuals."
+
+Then in any prompt: "@AfriqueBoussole logo in top-left corner"
+
+================================================================================
+ITERATION PROMPTS
+================================================================================
+
+If result needs adjustment:
+
+"Adjust this image:
+- Make headline [bigger/bolder/different color]
+- Move logo to [position]
+- Change background to exact #013C87
+- Increase contrast for readability
+- Make CTA button more prominent"
+
+---
+
+"Create 3 variations:
+- Version A: Bold modern tech aesthetic
+- Version B: Elegant minimalist corporate
+- Version C: Dynamic with diagonal elements"
+
+---
+
+"Keep the same composition but change:
+- Subject photo to [description]
+- Color balance (more blue #013C87)
+- Text to: [new text]"
+
+================================================================================
+QA CHECKLIST (BEFORE DELIVERY)
+================================================================================
+
+✅ Logo: AFRIQUE BOUSSOLE compass + text visible?
+✅ Colors: Exact #013C87 blue and #1D7742 green?
+✅ Text: ALL text clearly readable?
+✅ Composition: Professional and balanced?
+✅ Brand: Matches corporate premium style?
+✅ CTA: Call-to-action prominent?
+✅ Information: All details correct and legible?
+✅ Resolution: High quality for intended use?
+
+8/8 = APPROVED ✅
+<8 = REGENERATE with adjustments
+
+================================================================================
+USEFUL FLOW FEATURES
+================================================================================
+
+AGENT MODE:
+- Conversational iteration
+- Automatic model selection
+- Multi-image editing
+- Turn on with toggle
+
+INGREDIENTS:
+- Drag images into prompt
+- Use @character-name
+- Reference uploaded assets
+- Combine multiple inputs
+
+HISTORY:
+- Every version saved
+- Revert to any version
+- See all prompts used
+- Compare side-by-side
+
+EDITING:
+- Crop tool
+- Conversational edits
+- Batch operations
+- Non-destructive workflow
+
+================================================================================
+COMMON USE CASES
+================================================================================
+
+1. FORMATION/TRAINING FLYER:
+   "A4 flyer, professional, #013C87 blue dominant, 
+   subject + program details + dates + CTA"
+
+2. SERVICE ANNOUNCEMENT:
+   "LinkedIn post, clean composition, @AfriqueBoussole logo,
+   value proposition + CTA"
+
+3. EVENT POSTER:
+   "A3 poster, bold hierarchy, event details readable at distance,
+   modern African aesthetic"
+
+4. SOCIAL CAMPAIGN:
+   "Instagram carousel (3 images), consistent branding,
+   storytelling sequence, swipe CTA"
+
+5. PRESENTATION SLIDES:
+   "16:9 slide deck, data visualization, clean layouts,
+   professional corporate theme"
+
+================================================================================
+TIPS FOR BEST RESULTS
+================================================================================
+
+✅ Be specific about colors (use hex codes)
+✅ Describe layout clearly (percentages, positions)
+✅ Specify text hierarchy (large/medium/small)
+✅ Mention African context when relevant
+✅ Request readable text explicitly
+✅ Use uploaded references for consistency
+✅ Create character for logo consistency
+✅ Iterate conversationally with Agent
+✅ Check history for successful prompts
+✅ Generate variations for options
+
+❌ Don't use vague color names
+❌ Don't assume text will be readable
+❌ Don't skip brand elements
+❌ Don't overcrowd composition
+❌ Don't forget QA checklist
+
+================================================================================
+NEED HELP?
+================================================================================
+
+See full guide: GOOGLE-FLOW-GUIDE.md in the repository
+Repository: https://github.com/AMICHIABRYAN7/afrique-boussole-creatives
+Flow access: https://labs.google/fx/tools/flow
+Flow docs: https://support.google.com/flow/
+
+================================================================================
