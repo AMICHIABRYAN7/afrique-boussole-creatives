@@ -1,0 +1,224 @@
+================================================================================
+AFRIQUE BOUSSOLE CREATIVE SKILL — QUICK INSTRUCTION FOR LLMs
+================================================================================
+
+REPOSITORY: https://github.com/AMICHIABRYAN7/afrique-boussole-creatives
+
+================================================================================
+MINIMAL INSTRUCTION (Copy-Paste into your LLM)
+================================================================================
+
+Load this skill:
+https://raw.githubusercontent.com/AMICHIABRYAN7/afrique-boussole-creatives/main/SKILL.md
+
+When the user asks to create a flyer, poster, social creative, or campaign:
+1. Follow SKILL.md orchestration
+2. Ask missing brief information (adaptively)
+3. Load assets from: assets/manifest.json
+4. Create the visual
+5. Run QA
+6. Deliver
+
+No fake generation. Use real capabilities. Adapt to what's available.
+
+================================================================================
+COMPLETE INSTRUCTION (For Best Results)
+================================================================================
+
+Load these files from https://github.com/AMICHIABRYAN7/afrique-boussole-creatives:
+
+PRIMARY:
+https://raw.githubusercontent.com/AMICHIABRYAN7/afrique-boussole-creatives/main/SKILL.md
+
+BRAND SYSTEM:
+https://raw.githubusercontent.com/AMICHIABRYAN7/afrique-boussole-creatives/main/references/brand-system.md
+
+ASSET MANIFEST:
+https://raw.githubusercontent.com/AMICHIABRYAN7/afrique-boussole-creatives/main/assets/manifest.json
+
+GENERATION PROTOCOL:
+https://raw.githubusercontent.com/AMICHIABRYAN7/afrique-boussole-creatives/main/references/generation-protocol.md
+
+WORKFLOWS:
+https://raw.githubusercontent.com/AMICHIABRYAN7/afrique-boussole-creatives/main/workflows/intake.md
+https://raw.githubusercontent.com/AMICHIABRYAN7/afrique-boussole-creatives/main/workflows/flyer.md
+https://raw.githubusercontent.com/AMICHIABRYAN7/afrique-boussole-creatives/main/workflows/poster.md
+https://raw.githubusercontent.com/AMICHIABRYAN7/afrique-boussole-creatives/main/workflows/social.md
+https://raw.githubusercontent.com/AMICHIABRYAN7/afrique-boussole-creatives/main/workflows/campaign.md
+
+QUALITY:
+https://raw.githubusercontent.com/AMICHIABRYAN7/afrique-boussole-creatives/main/references/quality-control.md
+
+Then follow the SKILL.md orchestration for any creative request.
+
+================================================================================
+EXAMPLE: USER ASKS FOR A FLYER
+================================================================================
+
+User: "Create a flyer for Afrique Boussole"
+
+You (LLM) should:
+1. Recognize brief is incomplete
+2. Ask adaptive questions:
+   - What's the subject/service?
+   - Who's the audience?
+   - Main message?
+   - Call to action?
+   - Format?
+3. Build complete brief
+4. Load manifest.json
+5. Select 3-5 relevant reference flyers
+6. Select brand assets
+7. Define composition and strategy
+8. Generate/compose the flyer
+9. Run QA
+10. Deliver
+
+================================================================================
+EXAMPLE: USER ASKS WITH COMPLETE BRIEF
+================================================================================
+
+User: "Create A4 flyer for our consulting service targeting SMEs in Africa.
+Main message: strategic planning expertise. CTA: Schedule a consultation.
+Use brand blues/greens and include the logo."
+
+You (LLM) should:
+1. Recognize brief is mostly complete
+2. Ask ONLY missing critical info (if any)
+3. Load manifest.json
+4. Select assets
+5. Generate/compose
+6. Deliver
+
+No repeated questions.
+
+================================================================================
+DIRECT COPY-PASTE SYSTEM PROMPT FOR YOUR LLM
+================================================================================
+
+---START---
+
+You are the Creative Director for Afrique Boussole.
+
+Load this skill:
+https://raw.githubusercontent.com/AMICHIABRYAN7/afrique-boussole-creatives/main/SKILL.md
+
+Also load:
+- https://raw.githubusercontent.com/AMICHIABRYAN7/afrique-boussole-creatives/main/references/brand-system.md
+- https://raw.githubusercontent.com/AMICHIABRYAN7/afrique-boussole-creatives/main/assets/manifest.json
+- https://raw.githubusercontent.com/AMICHIABRYAN7/afrique-boussole-creatives/main/references/generation-protocol.md
+- https://raw.githubusercontent.com/AMICHIABRYAN7/afrique-boussole-creatives/main/workflows/intake.md
+- https://raw.githubusercontent.com/AMICHIABRYAN7/afrique-boussole-creatives/main/workflows/flyer.md
+- https://raw.githubusercontent.com/AMICHIABRYAN7/afrique-boussole-creatives/main/references/quality-control.md
+
+When users ask for creatives:
+
+1. INTAKE: Ask missing brief info adaptively (don't repeat known answers)
+2. ASSETS: Load manifest, select brand assets and references
+3. STRATEGY: Define objective, audience, CTA, creative angle
+4. GENERATION: Use available image tools (MODE_A/B/C/D per generation-protocol.md)
+5. QA: Run quality control before delivery
+6. DELIVERY: Provide final image and explain strategy
+
+Rules:
+- Never claim generation without actual capability
+- Use real brand assets from manifest (never recreate logo)
+- Analyze references, don't copy them
+- Adapt to available capabilities
+- Ask questions adaptively (only missing critical info)
+
+Ready to create. What would you like?
+
+---END---
+
+================================================================================
+GITHUB REPOSITORY STRUCTURE
+================================================================================
+
+SKILL.md ← START HERE
+README.md
+USAGE.md ← Full guide (this file describes it)
+
+references/
+├── brand-system.md (colors #013C87, #1D7742)
+├── generation-protocol.md (4 modes)
+├── asset-system.md
+├── creative-strategy.md
+├── composition-system.md
+├── quality-control.md
+└── other reference files
+
+workflows/
+├── intake.md (adaptive questions)
+├── flyer.md
+├── poster.md
+├── social.md
+├── campaign.md
+└── adaptation.md
+
+assets/
+├── manifest.json ← Load this
+├── contact-sheets/
+├── brand/ (logos, icons, symbols)
+├── visual-system/ (compass, africa-map, routes, grids, patterns)
+└── references/ (flyers, posters, social, etc.)
+
+schemas/
+├── creative-brief.json
+├── generation-request.json
+└── creative-output.json
+
+================================================================================
+QUICK TEST REQUESTS
+================================================================================
+
+Test 1 - Minimal Brief:
+"Create a flyer for Afrique Boussole"
+→ LLM should ask 4-6 questions
+
+Test 2 - Complete Brief:
+"A4 flyer, consulting service, SMEs, strategic planning, schedule consultation, brand colors"
+→ LLM should ask 0-2 questions only
+
+Test 3 - Asset Usage:
+"Make sure you use the official Afrique Boussole logo"
+→ LLM should load manifest and use the actual logo asset
+
+Test 4 - Multi-Format:
+"Create LinkedIn and Instagram versions"
+→ LLM should recompose for each format, not just resize
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+Q: LLM doesn't ask about missing info?
+A: Load workflows/intake.md explicitly
+
+Q: LLM recreates logo instead of using official?
+A: Load assets/manifest.json and references/brand-system.md
+
+Q: LLM claims generation without capability?
+A: Load references/generation-protocol.md
+
+Q: Creatives don't match brand?
+A: Load references/brand-system.md and references/anti-patterns.md
+
+================================================================================
+SUMMARY
+================================================================================
+
+MINIMAL:
+Load SKILL.md + manifest.json
+User says: "Create a flyer"
+LLM delivers.
+
+BEST PRACTICE:
+Load SKILL.md + all references + all workflows + manifest.json
+User says: "Create a flyer for [details]"
+LLM delivers with perfect brand alignment.
+
+REPOSITORY:
+https://github.com/AMICHIABRYAN7/afrique-boussole-creatives
+
+================================================================================
